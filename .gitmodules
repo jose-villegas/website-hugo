@@ -1,0 +1,9 @@
+[submodule "themes/herring-cove"]
+	path = themes/herring-cove
+	url = https://github.com/spf13/herring-cove.git
+[submodule "themes/hugo-elate-theme"]
+	path = themes/hugo-elate-theme
+	url = https://github.com/saey55/hugo-elate-theme
+[submodule "public"]
+	path = public
+	url = git@github.com:jose-villegas/jose-villegas.github.io.git
