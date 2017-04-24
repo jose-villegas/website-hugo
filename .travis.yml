@@ -4,7 +4,7 @@ go:
 os:
   - linux
 install:
-  - rm -rf public || exit 0 # cleanup previous run
+  - cd public/ && rm -r !(.git) || exit 0
   - go get -v -u github.com/spf13/hugo
 script:
   - bash deploy.sh
