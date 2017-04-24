@@ -16,7 +16,7 @@ if [ -n "$GITHUB_API_KEY" ]; then
     then msg="$1"
   fi
   git commit -m "$msg"
-  // avoid detached head issue
+  # avoid detached head issue
   git branch temporary_branch
   git checkout master
   git merge temporary_branch
