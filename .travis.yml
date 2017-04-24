@@ -1,13 +1,17 @@
+language: go
+go:
+- 1.6.2
 os:
-- linux
+  - linux
 install:
   - rm -rf public || exit 0 # cleanup previous run
+  - go get -v -u github.com/spf13/hugo
 script:
-- bash deploy.sh
+  - bash deploy.sh
 # Handle git submodules yourself
 git:
-    submodules: false
+  submodules: false
 # Use sed to replace the SSH URL with the public URL, then initialize submodules
 before_install:
-    - sed -i 's/git@github.com:/https:\/\/github.com\//' .gitmodules
-    - git submodule update --init --recursive
+  - sed -i 's/git@github.com:/https:\/\/github.com\//' .gitmodules
+  - git submodule update --init --recursive
