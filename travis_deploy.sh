@@ -16,6 +16,10 @@ if [ -n "$GITHUB_API_KEY" ]; then
     then msg="$1"
   fi
   git commit -m "$msg"
+  // avoid detached head issue
+  git branch temporary_branch
+  git checkout master
+  git merge temporary_branch
 
   # Push source and build repos.
   git push -f https://jose-villegas:$GITHUB_API_KEY@github.com/jose-villegas/jose-villegas.github.io.git master
