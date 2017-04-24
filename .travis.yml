@@ -4,10 +4,9 @@ go:
 os:
   - linux
 install:
-  - cd public/ && rm -r !(.git) && cd .. || exit 0
   - go get -v -u github.com/spf13/hugo
 script:
-  - bash deploy.sh
+  - bash travis_deploy.sh
 # Handle git submodules yourself
 git:
   submodules: false
