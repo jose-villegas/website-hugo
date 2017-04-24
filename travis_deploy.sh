@@ -18,7 +18,7 @@ if [ -n "$GITHUB_API_KEY" ]; then
   git commit -m "$msg"
 
   # Push source and build repos.
-  git push -f -q https://jose-villegas:$GITHUB_API_KEY@github.com/jose-villegas/jose-villegas.github.io.git master
+  git push -f https://jose-villegas:$GITHUB_API_KEY@github.com/jose-villegas/jose-villegas.github.io.git master
 
   # Come Back
   cd ..
