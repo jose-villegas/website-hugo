@@ -1,11 +1,9 @@
-sudo: false
-language: go
-go:
-- 1.6.2
 os:
 - linux
+install:
+  - rm -rf public || exit 0 # cleanup previous run
 script:
-- ./deploy.sh
+- bash deploy.sh
 # Handle git submodules yourself
 git:
     submodules: false
