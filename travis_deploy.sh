@@ -2,11 +2,10 @@
 if [ -n "$GITHUB_API_KEY" ]; then
   echo -e "\033[0;32mDeploying updates to GitHub...\033[0m"
 
-  shopt -s extglob
   # delete previous changes
   cd public 
   git checkout master
-  rm -r !(.git)
+  find . -type f -not -name '.git' -print0 | xargs -0 rm --
   cd ..
 
   # Build the project.
