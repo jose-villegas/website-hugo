@@ -4,9 +4,11 @@ go:
 os:
   - linux
 install:
-  # delete previous changes
-  - cd public/ && rm -r !(.git) && cd .. || exit 0
   - go get -v -u github.com/spf13/hugo
+  # delete previous changes
+  - cd public/ 
+  - git checkout .
+  - rm -r !(.git) && cd .. || exit 0
 script:
   - bash travis_deploy.sh
 # Handle git submodules yourself
