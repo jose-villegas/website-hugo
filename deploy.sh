@@ -2,6 +2,13 @@
 
 echo -e "\033[0;32mDeploying updates to GitHub...\033[0m"
 
+# delete previous changes
+cd public 
+git checkout master
+rm -r "!(.git)"
+git commit -m "Deleted previous changes"
+cd ..
+
 # Build the project.
 hugo # if using a theme, replace by `hugo -t <yourtheme>`
 
