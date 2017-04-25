@@ -2,6 +2,13 @@
 if [ -n "$GITHUB_API_KEY" ]; then
   echo -e "\033[0;32mDeploying updates to GitHub...\033[0m"
 
+  shopt -s extglob
+  # delete previous changes
+  cd public 
+  git checkout master
+  rm -r !(.git)
+  cd ..
+
   # Build the project.
   hugo # if using a theme, replace by `hugo -t <yourtheme>`
 
@@ -15,6 +22,7 @@ if [ -n "$GITHUB_API_KEY" ]; then
   if [ $# -eq 1 ]
     then msg="$1"
   fi
+  git status
   git commit -m "$msg"
 
   # Push source and build repos.
