@@ -8,6 +8,15 @@ disqusShortname = ""
 googleAnalytics = ""
 
 [params]
+  # Use custom.css for your custom styling
+  style = "default"
+  description = "José Villegas blog for game and graphics programming"
+  copyright = "&copy;2016 José Villegas"
+  sidebarAbout = [
+    "I am a creative illustrator and graphic designer with more than 10 years of experience.",
+    "Originally from Toronto, currently based in London."
+  ]
+
   # Nav links in the side bar
   [[params.navlinks]]
   name = "Home"
