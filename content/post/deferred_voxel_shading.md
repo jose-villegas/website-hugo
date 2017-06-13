@@ -1,7 +1,7 @@
 +++
 date = "2017-06-10T19:11:07-04:00"
 title = "Deferred Voxel Shading for Real Time Global Illumination"
-image = "img/dvsgi/dvsgi.png"
+image = "http://res.cloudinary.com/jose-villegas/image/upload/v1497325463/DVSGI/dvsgi_x6b8eu.png"
 showonlyimage = true
 draft = false
 weight = 0
@@ -32,7 +32,7 @@ imageAtomicRGBA8Avg(voxelEmission, position, emissive);
 
 Scene | Average Albedo | Average Normal | Average Emission
 :-:|:-:|:-:|:-:
-![](http://res.cloudinary.com/jose-villegas/image/upload/c_scale,w_195/v1497323827/scene_culelk.png)|![](http://res.cloudinary.com/jose-villegas/image/upload/c_scale,w_195/v1497323820/v_albedo_qtc4ov.png)|![](http://res.cloudinary.com/jose-villegas/image/upload/c_scale,w_195/v1497323804/v_normal_ryzmrh.png)|![](http://res.cloudinary.com/jose-villegas/image/upload/c_scale,w_195/v1497323828/v_emission_aibyaf.png)
+![](http://res.cloudinary.com/jose-villegas/image/upload/c_scale,w_195/v1497323827/DVSGI/scene_culelk.png)|![](http://res.cloudinary.com/jose-villegas/image/upload/c_scale,w_195/v1497323820/DVSGI/v_albedo_qtc4ov.png)|![](http://res.cloudinary.com/jose-villegas/image/upload/c_scale,w_195/v1497323804/DVSGI/v_normal_ryzmrh.png)|![](http://res.cloudinary.com/jose-villegas/image/upload/c_scale,w_195/v1497323828/DVSGI/v_emission_aibyaf.png)
 
 
 
