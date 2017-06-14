@@ -50,7 +50,7 @@ To reduce this issue my proposal utilizes a normal-weighted attenuation, where f
 D_\{x,y,z\} = (\hat{i}\cdot\Psi, \hat{j}\cdot\Psi, \hat{k}\cdot\Psi)
 \end{equation}
 
-Then three dominant faces are selected depending on the axes sign of the averaged normal:
+Then three dominant faces are selected depending on the axes sign of the voxel averaged normal vector:
 
 \begin{equation}
 D_{\omega} =

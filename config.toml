@@ -3,9 +3,9 @@ title = "José Villegas"
 theme = "hugo-tracks-theme"
 languageCode = "en-us"
 # Enable comments by entering your Disqus shortname
-disqusShortname = ""
+disqusShortname = "https-jose-villegas-github-io"
 # Enable Google Analytics by entering your tracking code
-googleAnalytics = ""
+googleAnalytics = "UA-97909433-1"
 
 [params]
   # Use custom.css for your custom styling
