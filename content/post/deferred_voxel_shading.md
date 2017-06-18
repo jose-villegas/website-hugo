@@ -1,5 +1,5 @@
 +++
-date = "2017-06-10T19:11:07-04:00"
+date = "2017-06-18T19:29:43-04:00"
 title = "Deferred Voxel Shading for Real Time Global Illumination"
 image = "http://res.cloudinary.com/jose-villegas/image/upload/v1497325463/DVSGI/dvsgi_x6b8eu.png"
 showonlyimage = true
