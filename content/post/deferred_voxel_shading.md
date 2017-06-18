@@ -5,7 +5,8 @@ image = "http://res.cloudinary.com/jose-villegas/image/upload/v1497325463/DVSGI/
 showonlyimage = true
 draft = false
 weight = 0
-categories = [ "Portfolio", "Graphics" ]
+categories = ["portfolio", "graphics"]
+tags = ["opengl", "graphics", "c++", "rendering", "portfolio", "global illumination", "assimp", "oglplus", "imgui", "voxels", "real time"]
 +++
 
 Computing indirect illumination is a challenging and complex problem for real-time rendering in 3D applications. This global illumination approach computes indirect lighting in real time utilizing a simpliﬁed version of the outgoing radiance and the scene stored in voxels.
