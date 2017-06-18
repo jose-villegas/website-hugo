@@ -126,7 +126,7 @@ where \\(L_i\\) is the light source intensity, \\(\rho\\) the voxel albedo, \\(N
 
 To generate accurate results during the cone tracing step the voxels need to be occluded, otherwise voxelized geometry that is supposed to have little to no outgoing radiance will contribute to the indirect lighting calculations.
 
-The classic shadow mapping or alike techniques can be used to compute the voxels occlusion. The position of the voxel is projected in light space and the depth of the projected point is compared with the stored depth from the shadow map to determine if the voxel is occluded. A simple improvement over this technique is: instead of using the voxel center position \\(V\_p\\), the position is translated along the normal vector of the voxel by half voxel size \\(V\_\{size\}\\) as \\(V\_{p} = V\_{p} + N\times V_{size}\times 0.5\\), this exposes the voxel position further in case the center position may be occluded by geometry near the voxel.
+The classic shadow mapping or alike techniques can be used to compute the voxels occlusion. The position of the voxel is projected in light space and the depth of the projected point is compared with the stored depth from the shadow map to determine if the voxel is occluded.
 
 My proposal also computes occlusion using raycasting within a volume. Any of the resulting volumes from the voxelization process can be used since the algorithm only needs to determine if a voxel exists at a certain position. To determine occlusion of a voxel, a ray is traced from the position of voxel in the direction of the light, the volume is sampled to determine if at the position of the ray there is a voxel, if this condition is true then the voxel is occluded.
 
