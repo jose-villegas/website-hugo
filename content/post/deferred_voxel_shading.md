@@ -15,7 +15,7 @@ Computing indirect illumination is a challenging and complex problem for real-ti
 
 Deferred voxel shading is a four-step real-time global illumination technique inspired by voxel cone tracing and deferred rendering. This approach enables us to obtain an accurate approximation of a plethora of indirect illumination effects including: indirect diffuse, specular reflectance, color-blending, emissive materials, indirect shadows and ambient occlusion. The steps that comprehend this technique are described below.
 
-<table style="width:100%">
+<table>
   <tr>
     <th>Technique Overview</th>
   </tr>
@@ -55,7 +55,7 @@ Furthermore, another structure is used for the voxel cone tracing pass. The resu
 
 The radiance volume represents the maximum level of detail for the voxelized scene, this texture is separated from the directional volumes. To bind these two structures, linear interpolation is used between samples of both structures when the mipmap level required for the diameter of the cone ranges between, the maximum level and the first filtered level of detail.
 
-<table style="width:100%">
+<table>
   <tr>
     <th>A visualization of the voxel structure</th>
   </tr>
@@ -63,6 +63,14 @@ The radiance volume represents the maximum level of detail for the voxelized sce
     <td align="center"><img src="http://res.cloudinary.com/jose-villegas/image/upload/v1497571454/DVSGI/voxel_structure_dsmsvc.svg" style="width: 60%;"/></td>
   </tr>
 </table>
+
+### 1.2. Dynamic Voxelization
+
+For dynamic updates, the conservative voxelization of static and dynamic geometry are separated. While static voxelization happens only once, dynamic voxelization happens per frame or when needed. The voxelization for both types of geometry rely on the same process, hence a way to indicate which voxels are static is needed. In my approach I use a single value 3D texture to identify voxels as static, this texture will be called *flag volume*.
+
+During static voxelization, after a voxel is generated a value is written to the *flag volume* indicating this position as static. In contrast, during the dynamic voxelization, before generating a voxel, a value is read from the *flag volume* at the writing position of the voxel, if the value indicates this position is marked as static then writing is discarded, leaving the static voxels untouched.
+
+To constantly revoxelize the scene it is necessary to clear from the 3D textures the previous stored dynamic voxels. This is done before the dynamic voxelization using compute shaders. The *flag volume* is read to clear voxels under two conditions: if the voxel exists and if it’s dynamic.
 
 ## 2. Voxel Illumination
 
@@ -79,7 +87,9 @@ One of the advantages of this technique is that it's compatible with all standar
 A disvantage of this technique is the loss of precision averaging all the geometry normals within a voxel. The resulting averaged normal may end up pointing towards a non-convenient direction. This problem is notable when the normal vectors within the space of a voxel are uneven:
 
 <center>
+
 ![](http://res.cloudinary.com/jose-villegas/image/upload/v1497413810/DVSGI/uneven_normals_n3klcb.svg)
+
 </center>
 
 To reduce this issue my proposal utilizes a normal-weighted attenuation, where first the normal attenuation is calculated per every face of the voxel as follows:
@@ -110,7 +120,7 @@ where \\(L_i\\) is the light source intensity, \\(\rho\\) the voxel albedo, \\(N
 
 | Normal Attenuation | Normal-weighted Attenuation |
 |--------------------|-----------------------------|
-<img src="http://res.cloudinary.com/jose-villegas/image/upload/v1497414410/DVSGI/shading_standard_e7vzft.png" style="width: 99%;"/>&nbsp;|<img src="http://res.cloudinary.com/jose-villegas/image/upload/v1497414410/DVSGI/shading_directional_uwyxxw.png" style="width: 99%;"/>&nbsp;
+<img src="http://res.cloudinary.com/jose-villegas/image/upload/v1497414410/DVSGI/shading_standard_e7vzft.png" style="width: 99%;"/>|<img src="http://res.cloudinary.com/jose-villegas/image/upload/v1497414410/DVSGI/shading_directional_uwyxxw.png" style="width: 99%;"/>
 
 ### 2.2. Voxel Occlusion
 
@@ -126,9 +136,9 @@ Instead of stopping the ray as soon a voxel is found, soft shadows can be approx
 
 | Hard Voxel Shadows | Soft Voxel Shadows |
 |:------------------:|:------------------:|
-<img src="http://res.cloudinary.com/jose-villegas/image/upload/v1497500701/DVSGI/hard_voxel_shadows_ovj32i.svg" style="width: 49%;"/>&nbsp;|<img src="http://res.cloudinary.com/jose-villegas/image/upload/v1497500702/DVSGI/soft_voxel_shadows_gcmlzm.svg" style="width: 49%;"/>&nbsp;
+<img src="http://res.cloudinary.com/jose-villegas/image/upload/v1497500701/DVSGI/hard_voxel_shadows_ovj32i.svg" style="width: 49%;"/>|<img src="http://res.cloudinary.com/jose-villegas/image/upload/v1497500702/DVSGI/soft_voxel_shadows_gcmlzm.svg" style="width: 49%;"/>
 &nbsp;|&nbsp;
-<img src="http://res.cloudinary.com/jose-villegas/image/upload/v1497500851/DVSGI/hard_traced_takadd.png" style="width: 99%;"/>&nbsp;|<img src="http://res.cloudinary.com/jose-villegas/image/upload/v1497500853/DVSGI/soft_traced_upabyg.png" style="width: 99%;"/>&nbsp;
+<img src="http://res.cloudinary.com/jose-villegas/image/upload/v1497500851/DVSGI/hard_traced_takadd.png" style="width: 99%;"/>|<img src="http://res.cloudinary.com/jose-villegas/image/upload/v1497500853/DVSGI/soft_traced_upabyg.png" style="width: 99%;"/>
 
 ### 2.3. Emission
 
@@ -140,7 +150,7 @@ For more precise results during the cone tracing step anisotropic voxels are use
 
 To generate the anisotropic voxels I use the process detailed by Crassin [here](http://maverick.inria.fr/Publications/2011/CNSGE11b/). To compute a directional value a step of volumetric integration is done in depth and the directional values are averaged to obtain the resulting value for a certain direction. In my approach this is done using compute shaders, executing a thread per every voxel at the mipmap level that is going to be filtered using the values from the previous level, this process is done per every mipmap level.
 
-<table style="width:100%">
+<table>
   <tr>
     <th>Process to generate anisotropic voxels</th>
   </tr>
@@ -151,11 +161,11 @@ To generate the anisotropic voxels I use the process detailed by Crassin [here](
 
 ## 4. Voxel Cone Tracing
 
-Voxel cone tracing is similar to ray marching, the cone advances a certain length every step, except that the sampling volume increases along the diameter of the cone. The mipmap levels in the directional volumes are used to approximate the expansion of the sampling volume during the cone trace, to ensure smooth variation between samples quadrilinear interpolation is used which is natively supported with graphics hardware for 3D textures.
+Voxel cone tracing is similar to ray marching, the cone advances a certain length every step, except that the sampling volume increases along the diameter of the cone. The mipmap levels in the directional volumes are used to approximate the expansion of the sampling volume during the cone trace, to ensure smooth variation between samples quadrilinear interpolation is used which is natively supported with graphics hardware for 3D textures. This step is done in the fragment shader as a screenspace effect, a deferred rendering backend is needed, though voxel cone tracing can be done in forward rendering regardless, it would be extremely inneficient and expensive.
 
 The shape of the cone is meant to exploit the spatial and directional coherence of the many rays packed within the space of a cone. This behavior is used in many approaches such as packet ray-tracing.
 
-<table style="width:100%">
+<table>
   <tr>
     <th>Visual representation of a cone used for cone tracing</th>
   </tr>
@@ -188,7 +198,7 @@ Ambient occlusion can be approximated using the same cones used for the diffuse 
 
 Cone tracing can also be used to achieve soft shadows tracing a cone from the surface point \\(x\\) towards the direction of the light The cone aperture controls how soft and scattered the resulting shadow is. For soft shadows with cones we only accumulate the occlusion value \\(\alpha\_2\\) at each step.
 
-<table style="width:100%">
+<table>
   <tr>
     <th>Cone Soft Shadows</th>
   </tr>
@@ -197,9 +207,192 @@ Cone tracing can also be used to achieve soft shadows tracing a cone from the su
   </tr>
 </table>
 
-## Voxel Indirect Diffuse
+## Voxel Global Illumination
 To calculate the diffuse reflection over a surface point using voxel cone tracing we need its normal vector, albedo and the incoming radiance at that point. Since we voxelize the geometry normal vectors and the albedo into 3D textures, all the needed information for the indirect diffuse term is available after calculating the voxel direct illumination. In my approach I perform voxel cone tracing per voxel using compute shaders to calculate the first bounce of indirect diffuse at each voxel. This step is done after the outgoing radiance values from the voxel direct illumination pass are anisotropically filtered. 
 
 For each voxel we use its averaged normal vector to generate a set of cones around the normal oriented hemisphere to calculate the indirect diffuse at the position of the voxel. The weighted result from all the cones is then multiplied by the albedo of the voxel and added to the direct illumination value. The resulting outgoing radiance for the radiance volume now stores the direct illumination, and the first bounce of indirect diffuse. The anisotropic filtering process needs be repeated for the new values. This enables us to approximate the second bounce of indirect lighting during the final voxel cone tracing step per pixel. This can be extended to support multiple bounces.
 
 # Results
+
+The results here were tested on an AMD 380 R9 GPU on different scenes with increasing geometric complexity and dynamic objects added to the scene. The scenes used for testing are listed below:
+
+<div style="overflow-x:auto;">
+{{% md %}}
+
+| Name | Model | \# Vertices | \# Triangles |
+|:----:|:-----:|:----------:|:------------:|
+S1|[Cornell Box](http://graphics.cs.williams.edu/data/meshes.xml)|72|36
+S2|[Sibenik Cathedral](http://graphics.cs.williams.edu/data/meshes.xml)|40.479|75.283
+S3|[Crytek Sponza](http://www.crytek.com/cryengine/cryengine3/downloads)|153.635|278.163
+
+{{% /md %}}
+</div>
+
+## Voxelization
+
+The times per frame for the dynamic and static voxelization of each scene are show below: 
+
+<div style="overflow-x:auto;">
+{{% md %}}
+
+| Name | Static | Clear Dynamic | Dynamic |
+|:----:|:------:|:-------------:|:-------:|
+S1|0.51 ms|0.78 ms|1.30 ms
+S2|1.80 ms| 0.58 ms| 2.11 ms
+S3|11.29 ms| 0.60 ms| 2.03 ms
+
+{{% /md %}}
+</div>
+
+For the voxelization process, a higher resolution for the voxel representation can actually be beneficial, because it reduces thread collisions for the writing operations, in the scene S3 there is a higher time for the static voxelization this reason, S3 has a higher triangle density per voxel meaning more syncing operations are needed.
+
+## Voxel Illumination
+
+The table below shows the results for voxel direct illumination with shadow mapping or raycasting for voxel occlusion and voxel global illumination, it also includes the time for anisotropic filtering after both steps. For voxel direct illumination the times are similar between all scenes using shadow mapping, while raycasting costs more performance it enables occlusion for any type of light source without shadow mapping.
+
+<div style="overflow-x:auto;">
+{{% md %}}
+
+| Name | Direct (with Shadow Mapping) | Direct (with Raycasting) | Anistropic Filtering | Global Illumination | Anistropic Filtering |
+|:----:|:----------------------------:|:------------------------:|:--------------------:|:-------------------:|:--------------------:|
+S1|1.33 ms|20.32 ms|1.39 ms|8.41 ms|1.38 ms
+S2|0.95 ms|4.57 ms|1.38 ms|3.88 ms|1.37 ms
+S3|1.13 ms|3.31 ms|1.37 ms|5.44 ms|1.38 ms
+
+{{% /md %}}
+</div>
+
+For raycasting, the amount of empty space in the scene affects how early the traced rays end, which affects the general performance. For high density scenes such as S3 most rays end early, in contrast the scene S1 takes a considerable amount of time using raycasting because the scene is mostly empty space, this same condition also applies for the voxel indirect diffuse step.
+
+| Scene | Voxel Direct | Voxel Direct + Indirect Diffuse |
+|:-----:|:------------:|:-------------------------------:|
+<img src="http://res.cloudinary.com/jose-villegas/image/upload/v1497742010/DVSGI/cornell_scene.png" style="width: 99%;"/>|<img src="http://res.cloudinary.com/jose-villegas/image/upload/v1497740284/DVSGI/direct_voxel_cornell.png" style="width: 99%;"/>|<img src="http://res.cloudinary.com/jose-villegas/image/upload/v1497740284/DVSGI/gi_voxel_cornell.png" style="width: 99%;"/>
+<p style="height: 0px"></p>|<p style="height: 0px"></p>
+<img src="http://res.cloudinary.com/jose-villegas/image/upload/v1497742010/DVSGI/sibenik_scene.png" style="width: 99%;"/>|<img src="http://res.cloudinary.com/jose-villegas/image/upload/v1497740284/DVSGI/voxel_direct_sibenik.png" style="width: 99%;"/>|<img src="http://res.cloudinary.com/jose-villegas/image/upload/v1497740284/DVSGI/voxel_gi_sibenik.png" style="width: 99%;"/>
+<p style="height: 0px"></p>|<p style="height: 0px"></p>
+<img src="http://res.cloudinary.com/jose-villegas/image/upload/v1497742010/DVSGI/sponza_scene.png" style="width: 99%;"/>|<img src="http://res.cloudinary.com/jose-villegas/image/upload/v1497740284/DVSGI/voxel_direct_sponza.png" style="width: 99%;"/>|<img src="http://res.cloudinary.com/jose-villegas/image/upload/v1497740284/DVSGI/voxel_gi_sponza.png" style="width: 99%;"/>
+
+## Voxel Cone Tracing
+
+Once the voxel structure is anisotropically filtered we can proceed with voxel cone tracing per pixel for the final composition of the image. In my approach six cones with an aperture of 60 degrees are used to approximate the indirect diffuse term, for the indirect specular in these test I utilize a specular cone with an aperture of 10 degrees. The next table shows the performance for indirect lighting on different scenes. For all the scenes my implementation achieves results over 30FPS (\\(< 33.3 ms\\)) under constant dynamic update, meaning objects and lights are changing and moving per frame. The dynamic update includes dynamic voxelization, voxel direct illumination, voxel global illumination and the necessary anistropic filtering steps. For a screen resolution of \\(1920x1080\\) pixels my implementation obtains an average framerate of \\(28.57 ms\\) for the scene S3, \\(27.02 ms\\) for S2 and \\(27.77 ms\\) for S1 under constant dynamic update, these results show that even with a high resolution the technique can achieve over 30FPS for all the scenes.
+
+<div style="overflow-x:auto;">
+{{% md %}}
+
+|Scene | Direct | Indirect (Diffuse + Specular) | Direct + Indirect | Dynamic Stress |
+|:----:|:------:|:-----------------------------:|:-----------------:|:--------------:|
+S1 | 1.03 ms | 7.27 ms | 7.67 ms | 17.81 ms |
+S2 | 1.32 ms | 7.62 ms | 8.32 ms | 17.60 ms |
+S3 | 1.34 ms | 7.81 ms | 8.41 ms | 16.97 ms |
+
+{{% /md %}}
+</div>
+
+### Optimizations
+
+In my implementation the dynamic update can be set to update at a given number of frames or on demand, a simple optimization for example is to update each 5~3 frames, this can easily give results over 60FPS for most scenes with little to zero notable difference.
+
+Since the lighting step is separate from the voxelization step, revoxelization is only truly needed when objects move within the scene. For changes that only involve lighting revoxelization is unnecesary.
+
+One optimization to consider that wasn't implemented in my application is to separate the indirect lighting calculation from voxel cone tracing at a lower resolution. The higher the resolution the more surface points that need to be cone traced since each pixel represents a position in scene. A disvantage of doing this is that it creates some notable artifacts, though they can be somewhat reduced through clever use of screen-space techniques.
+
+## Show Off
+
+### Dynamic Update
+
+<table>
+  <tr>
+    <th>Cornell Box</th>
+    <th>Sibenik Cathedral</th>
+    <th>Crytek Sponza</th>
+  </tr>
+  <tr>
+    <td align="center">
+      <video width="100%" autoplay loop>
+        <source src="http://res.cloudinary.com/jose-villegas/video/upload/v1497754650/DVSGI/cornell.webm" type="video/webm">
+        Your browser does not support the video tag.
+      </video>
+    </td>
+    <td align="center">
+      <video width="100%" autoplay loop>
+        <source src="http://res.cloudinary.com/jose-villegas/video/upload/v1497753449/DVSGI/sibenik.webm" type="video/webm">
+        Your browser does not support the video tag.
+      </video>
+    </td>
+    <td align="center">
+      <video width="100%" autoplay loop>
+        <source src="http://res.cloudinary.com/jose-villegas/video/upload/v1497753449/DVSGI/sponza.webm" type="video/webm">
+        Your browser does not support the video tag.
+      </video>
+    </td>
+  </tr>
+</table>
+
+### Indirect Lighting
+
+<table>
+  <tr>
+    <th>Emissive Material</th>
+    <th>Indirect Shadows</th>
+  </tr>
+  <tr>
+    <td align="center">
+      <video width="100%" autoplay loop>
+        <source src="http://res.cloudinary.com/jose-villegas/video/upload/v1497757150/DVSGI/emissive.webm" type="video/webm">
+        Your browser does not support the video tag.
+      </video>
+    </td>
+    <td align="center">
+      <video width="100%" autoplay loop>
+        <source src="http://res.cloudinary.com/jose-villegas/video/upload/v1497757746/DVSGI/indirect_shadows.webm" type="video/webm">
+        Your browser does not support the video tag.
+      </video>
+    </td>
+  </tr>
+</table>
+
+### Ambient Occlusion
+
+| Cornell Box | Sibenik Cathedral | Crytek Sponza |
+|:-----------:|:-----------------:|:-------------:|
+<img src="http://res.cloudinary.com/jose-villegas/image/upload/v1497758102/DVSGI/cornell_ao.png" style="width: 100%;"/>|<img src="http://res.cloudinary.com/jose-villegas/image/upload/v1497758116/DVSGI/sibenik_ao.png" style="width: 100%;"/>|<img src="http://res.cloudinary.com/jose-villegas/image/upload/v1497758109/DVSGI/sponza_ao.png" style="width: 100%;"/>
+
+### Soft Shadows
+
+| 1 degree aperture | 5 degree aperture | 10 degree aperture | 25 degree aperture |
+|:------:|:------:|:------:|:------:|
+<img src="https://res.cloudinary.com/jose-villegas/image/upload/v1497758213/DVSGI/shadow_1.png" style="width: 100%;"/>|<img src="https://res.cloudinary.com/jose-villegas/image/upload/v1497758213/DVSGI/shadow_5.png" style="width: 100%;"/>|<img src="https://res.cloudinary.com/jose-villegas/image/upload/v1497758213/DVSGI/shadow_10.png" style="width: 100%;"/>|<img src="https://res.cloudinary.com/jose-villegas/image/upload/v1497758213/DVSGI/shadow_25.png" style="width: 100%;"/>
+
+### Comparison
+
+| Reference (3~ hours) | [Light Propagation Volumes](http://www.crytek.com/download/Light_Propagation_Volumes.pdf) (18.86 ms) | My approach (17.34 ms) |
+|:------:|:------:|:------:|
+<img src="http://res.cloudinary.com/jose-villegas/image/upload/v1497758681/DVSGI/reference.png" style="width: 100%;"/>|<img src="http://res.cloudinary.com/jose-villegas/image/upload/v1497758675/DVSGI/lpv_comp.png" style="width: 100%;"/>|<img src="https://res.cloudinary.com/jose-villegas/image/upload/v1497758664/DVSGI/sponza_comp.png" style="width: 100%;"/>
+
+### Emissive Materials / Area Lights
+
+| &nbsp; | &nbsp; |
+|:------:|:------:|
+<img src="http://res.cloudinary.com/jose-villegas/image/upload/v1497758681/DVSGI/area_sponza.png" style="width: 100%;"/>|<img src="http://res.cloudinary.com/jose-villegas/image/upload/v1497758675/DVSGI/area_shadows.png" style="width: 100%;"/>
+<img src="http://res.cloudinary.com/jose-villegas/image/upload/v1497758681/DVSGI/fine_emissive.png" style="width: 100%;"/>|<img src="http://res.cloudinary.com/jose-villegas/image/upload/v1497758675/DVSGI/area_teapot.png" style="width: 100%;"/>
+
+### Teasers
+
+| &nbsp; | &nbsp; |
+|:------:|:------:|
+<img src="http://res.cloudinary.com/jose-villegas/image/upload/v1497758681/DVSGI/teaser.png" style="width: 100%;"/>|<img src="http://res.cloudinary.com/jose-villegas/image/upload/v1497758675/DVSGI/teaser2.png" style="width: 100%;"/>
+<img src="http://res.cloudinary.com/jose-villegas/image/upload/v1497758681/DVSGI/teaser3.png" style="width: 100%;"/>|<img src="http://res.cloudinary.com/jose-villegas/image/upload/v1497758675/DVSGI/teaser4.png" style="width: 100%;"/>
+
+### Recording
+
+{{< youtube HwGSoTyP-oM >}}
+
+{{< youtube 52nkpkVZt-g >}}
+
+{{< youtube e1r5VrDtG7k >}}
+
+# Source Code & Executable
+
+All the source code for this project can be found in this link [here](https://github.com/jose-villegas/VCTRenderer)
+
+The executable application for this technique can be found in this link [here](https://github.com/jose-villegas/VCTRenderer/releases)

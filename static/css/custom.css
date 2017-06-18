@@ -1,4 +1,9 @@
 /* your styles go here */
-th { 
-    text-align: center ;
+th 
+{ 
+    text-align: center;
+}
+
+table {
+    width: 100%;
 }
