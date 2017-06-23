@@ -6,13 +6,17 @@
   src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
 </script>
 
+<div class="row" style="height: 30px;"></div>
 <div class="row">
-  <div class="col-md-6">
-    <div class="title-info">
+  <div class="col-md-6 nopadding">
+    <div class="site-title">
       {{ with .Site.Title }}
       <a href=""> {{ . }} </a>
       {{ end }}
     </div>
+    <p class="site-description">
+        {{ .Site.Params.description }}
+		</p>
   </div>
   <div class="col-md-6">
     <div class="menu">

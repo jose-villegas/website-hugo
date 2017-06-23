@@ -18,20 +18,18 @@
   <div class="row">
     <div class="col-md-2">
       <div class="entry-sidebar">
-        CATEGORIES
-        {{ range $name, $taxonomy := .Site.Taxonomies.categories }}
+        CATEGORIES        
         <div class="entry-categories">
-          <a href="{{ "/categories/" | relLangURL }}{{ $name | urlize }}">{{ $name }}</a>
-        </div>
+        {{ range $name, $taxonomy := .Site.Taxonomies.categories }}
+          <a href="{{ "/categories/" | relLangURL }}{{ $name | urlize }}">{{ $name }}</a> 
         {{ end }}
-
-        Tags
-        {{ range $name, $taxonomy := .Site.Taxonomies.tags }}
+        </div>
+        TAGS        
         <div class="entry-tags">
-          <a href="{{ "/tags/" | relLangURL }}{{ $name | urlize }}">{{ $name }}</a>
-        </div>
+        {{ range $name, $taxonomy := .Site.Taxonomies.tags }}
+          <a href="{{ "/tags/" | relLangURL }}{{ $name | urlize }}">{{ $name }}</a> 
         {{ end }}
-
+        </div>
       </div>
     </div>
     <div class="col-md-10">

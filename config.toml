@@ -10,7 +10,7 @@ googleAnalytics = "UA-97909433-1"
 [params]
   # Use custom.css for your custom styling
   style = "default"
-  description = "José Villegas blog for game and graphics programming"
+  description = "Graphics & Game Programming"
   copyright = "&copy;2016 José Villegas"
   sidebarAbout = [
     ""
