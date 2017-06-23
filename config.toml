@@ -21,13 +21,13 @@ googleAnalytics = "UA-97909433-1"
   name = "Home"
   url = ""
 
-  [[params.navlinks]]
-  name = "About"
-  url = "about/index"
+  # [[params.navlinks]]
+  # name = "About"
+  # url = "about/index"
 
-  [[params.navlinks]]
-  name = "Contact"
-  url = "contact/index"
+  # [[params.navlinks]]
+  # name = "Contact"
+  # url = "contact/index"
 
   [params.social]
   email         = "villegasjose.gg@gmail.com"
