@@ -1,5 +1,22 @@
 /* your styles go here */
 
+* {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    background-color: transparent;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
 th {
     text-align: center;
 }
@@ -96,4 +113,32 @@ table {
 .entry-categories a,
 .entry-tags a {
     line-height: 1.85;
+}
+
+.image-container {
+    overflow: hidden;
+    padding: 0%;
+    margin-bottom: 2.5em;
+    right: -1px;
+    height: calc(100%);
+    width: calc(50% + 0px);
+}
+
+.featured-image {
+    margin-bottom: 2.5em;
+    max-width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    background-position: 50%;
+    background-size: cover;
+    transition: transform 0.3s ease;
+}
+
+.featured-image:hover,
+.featured-image:active,
+.featured-image:focus {
+    -webkit-transform: scale(1.05);
+    transform: scale(1.05);
+    -moz-transform: scale(1.05) rotate(0.02deg);
 }

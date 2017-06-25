@@ -34,14 +34,20 @@
       </div>
     </div>
     {{ if and (isset .Params "image") .Params.image }}
-    <div class="col-md-6 content-image" style="background-image: url(/{{ .Params.image }})">
+    <div class="col-md-6 image-container">
+      <a class="featured-image-link" href="{{ .Permalink }}">
+      <div class="featured-image" style="background-image: url({{ .Params.image }})">
+      </div></a>
     </div>
     {{ end }}
   </div>
   {{ else }}
   <div class="row content">
     {{ if and (isset .Params "image") .Params.image }}
-    <div class="col-md-6 content-image" style="background-image: url(/{{ .Params.image }})">
+    <div class="col-md-6 image-container">
+      <a class="featured-image-link" href="{{ .Permalink }}">
+      <div class="featured-image" style="background-image: url({{ .Params.image }})">
+      </div></a>
     </div>
     {{ end }}
 
