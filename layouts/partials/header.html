@@ -8,13 +8,13 @@
 
 <div class="row" style="height: 30px;"></div>
 <div class="row">
-  <div class="col-md-6 nopadding">
+  <div class="col-md-6">
     <div class="site-title">
       {{ with .Site.Title }}
       <a href=""> {{ . }} </a>
       {{ end }}
     </div>
-    <p class="site-description">
+    <p class="col-md-6 site-description">
         {{ .Site.Params.description }}
 		</p>
   </div>

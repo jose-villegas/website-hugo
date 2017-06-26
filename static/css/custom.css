@@ -1,4 +1,5 @@
 /* your styles go here */
+
 th {
     text-align: center;
 }
@@ -123,4 +124,42 @@ table {
     -webkit-transform: scale(1.05);
     transform: scale(1.05);
     -moz-transform: scale(1.05) rotate(0.02deg);
+}
+
+.entry-meta {
+    font-size: 1em;
+    line-height: 1.5;
+    padding-top: 3em;
+    letter-spacing: 0.08em;
+    text-align: center;
+    color: #aaaaaa;
+}
+
+.post-image {
+    position: relative;
+    height: 0;
+    padding-bottom: 50%;
+    background-position: 50%;
+    background-size: cover;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -webkit-transition: -webkit-transform 0.3s ease;
+    transition: transform 0.3s ease;
+}
+
+.post-image:after {
+    position: absolute;
+    content: '';
+    background: #222;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    opacity: 0.2;
+    -webkit-transition: opacity 0.2s ease;
+    transition: opacity 0.2s ease;
+}
+
+.post-image:hover:after {
+    opacity: 0;
 }
