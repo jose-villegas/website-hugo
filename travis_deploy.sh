@@ -2,6 +2,12 @@
 if [ -n "$GITHUB_API_KEY" ]; then
   echo -e "\033[0;32mDeploying updates to GitHub...\033[0m"
 
+  # delete previous changes
+  cd public 
+  git checkout master
+  find . -type f -not -name '.git' -print0 | xargs -0 rm --
+  cd ..
+
   # Build the project.
   hugo # if using a theme, replace by `hugo -t <yourtheme>`
 

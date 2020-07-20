@@ -6,7 +6,6 @@ os:
 install:
   - sudo pip install pygments
   - wget https://github.com/gohugoio/hugo/releases/download/v0.56.3/hugo_0.56.3_Linux-64bit.deb -O /tmp/hugo.deb && sudo dpkg -i /tmp/hugo.deb
-  - rm -rf public || exit 0
 script:
   - bash travis_deploy.sh
 # Handle git submodules yourself
