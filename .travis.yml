@@ -4,7 +4,7 @@ go:
 os:
   - linux
 install:
-  - go get -v -u github.com/spf13/hugo
+  - go get -v -u github.com/gohugoio/hugo
 script:
   - bash travis_deploy.sh
 # Handle git submodules yourself
