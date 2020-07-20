@@ -1,13 +1,15 @@
-+++
-date = "2017-06-18T19:29:43-04:00"
-title = "Deferred Voxel Shading for Real Time Global Illumination"
-image = "http://res.cloudinary.com/jose-villegas/image/upload/v1497325463/DVSGI/dvsgi_x6b8eu.png"
-showonlyimage = true
-draft = false
-weight = 0
-categories = ["portfolio", "graphics"]
-tags = ["opengl", "graphics", "c++", "rendering", "portfolio", "global illumination", "assimp", "oglplus", "imgui", "voxels", "real time"]
-+++
+---
+date: "2020-07-20T17:26:11-04:00"
+title: "Deferred Voxel Shading for Real Time Global Illumination"
+image: "http://res.cloudinary.com/jose-villegas/image/upload/v1497325463/DVSGI/dvsgi_x6b8eu.png"
+showonlyimage: true
+draft: false
+weight: 0
+categories: ["portfolio", "graphics"]
+tags: ["opengl", "graphics", "c++", "rendering", "portfolio", "global illumination", "assimp", "oglplus", "imgui", "voxels", "real time"]
+---
+
+This was my master thesis for Computer Graphics, eventually I managed to publish a paper for this work.
 
 Computing indirect illumination is a challenging and complex problem for real-time rendering in 3D applications. This global illumination approach computes indirect lighting in real time utilizing a simpliﬁed version of the outgoing radiance and the scene stored in voxels.
 <!--more-->
