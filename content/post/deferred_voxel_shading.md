@@ -1,5 +1,5 @@
 ---
-date: "2020-07-20T17:26:11-04:00"
+date: "2020-04-30T00:00:00+02:00"
 title: "Deferred Voxel Shading for Real Time Global Illumination"
 image: "http://res.cloudinary.com/jose-villegas/image/upload/v1497325463/DVSGI/dvsgi_x6b8eu.png"
 showonlyimage: true
