@@ -5,7 +5,7 @@ showonlyimage: true
 draft: false
 categories: ["games"]
 tags: ["unity", "projects", "games", "fun", "c#"]
-image: "https://res.cloudinary.com/jose-villegas/image/upload/v1595364395/WebPage/0001-0250.gif"
+image: "https://camo.githubusercontent.com/cc7cc1a128f4b73158278f91f9b56eb0cfda2763/68747470733a2f2f692e696d6775722e636f6d2f4e6745337962662e706e67"
 ---
 
 For this instance I was asked to create a game, alone, in a single week as part of a test. I ended up making an isometric platform game, you have to complete levels and collect coins along the way. This 
@@ -25,7 +25,7 @@ The game was made with Unity 5.5.3 at the time so it's quite old. But the source
 
 Some screenshots of the game:
 
-<img src="https://camo.githubusercontent.com/cc7cc1a128f4b73158278f91f9b56eb0cfda2763/68747470733a2f2f692e696d6775722e636f6d2f4e6745337962662e706e67" style="width: 100%;"/>
+<img src="https://res.cloudinary.com/jose-villegas/image/upload/v1595364395/WebPage/0001-0250.gif" style="width: 100%;"/>
 
 Creating a shockwave
 <img src="https://res.cloudinary.com/jose-villegas/image/upload/v1595365108/WebPage/shock.gif" style="width: 100%;"/>
