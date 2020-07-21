@@ -7,16 +7,6 @@ disqusShortname = "https-jose-villegas-github-io"
 # Enable Google Analytics by entering your tracking code
 googleAnalytics = "UA-173116509-1"
 
-[privacy]
-  # Google Analytics privacy settings - https://gohugo.io/about/hugo-and-gdpr/index.html#googleanalytics
-  [privacy.googleAnalytics]
-    # set to true to disable service 
-    disable = false
-    # set to true to meet General Data Protection Regulation (GDPR)
-    anonymizeIP = true
-    respectDoNotTrack = true
-    useSessionStorage = true
-
 [params]
   # Use custom.css for your custom styling
   style = "default"
