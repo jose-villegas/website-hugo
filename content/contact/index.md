@@ -1,5 +1,5 @@
 ---
-date: "2016-11-06T13:00:25+05:30"
+date: "2020-07-20T17:26:11-04:00"
 title: "Get in touch"
 draft: false
 image: "https://res.cloudinary.com/jose-villegas/image/upload/v1595302391/WebPage/5597872486_43af8e948b_o.jpg"

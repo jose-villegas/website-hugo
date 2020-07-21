@@ -5,8 +5,8 @@ image: "http://res.cloudinary.com/jose-villegas/image/upload/v1497325463/DVSGI/d
 showonlyimage: true
 draft: false
 weight: 0
-categories: ["portfolio", "graphics"]
-tags: ["opengl", "graphics", "c++", "rendering", "portfolio", "global illumination", "assimp", "oglplus", "imgui", "voxels", "real time"]
+categories: ["graphics"]
+tags: ["opengl", "c++", "global illumination", "voxels"]
 ---
 
 This was my master thesis for Computer Graphics, eventually I managed to publish a paper for this work.
@@ -15,36 +15,37 @@ Computing indirect illumination is a challenging and complex problem for real-ti
 <!--more-->
 
 # Table of Contents
-* [Overview](#overview)
-* [1. Voxelization](#1-voxelization)
-    * [1.1. Voxel Structure](#1-1-voxel-structure)
-    * [1.2. Dynamic Voxelization](#1-2-dynamic-voxelization)
-* [2. Voxel Illumination](#2-voxel-illumination)
-    * [2.1. Normal-Weighted Attenuation](#2-1-normal-weighted-attenuation)
-    * [2.2. Voxel Occlusion](#2-2-voxel-occlusion)
-      * [2.2.1. Soft Voxel Shadows](#2-2-1-soft-voxel-shadows)
-    * [2.3. Emission](#2-3-emission)
-* [3. Anisotropic Voxels](#3-anisotropic-voxels)
-* [4. Voxel Cone Tracing](#4-voxel-cone-tracing)
-    * [4.1. Indirect Illumination](#4-1-indirect-illumination)
-    * [4.2. Ambient Occlusion](#4-2-ambient-occlusion)
-    * [4.3. Soft Shadows](#4-3-soft-shadows)
-* [Voxel Global Illumination](#voxel-global-illumination)
-* [Results](#results)
-* [Voxelization](#voxelization)
-* [Voxel Illumination](#voxel-illumination)
-* [Voxel Cone Tracing](#voxel-cone-tracing)
-* [Comparison](#comparison)
-    * [Optimizations](#optimizations)
-* [Show Off](#show-off)
-    * [Dynamic Update](#dynamic-update)
-    * [Indirect Lighting](#indirect-lighting)
-    * [Ambient Occlusion](#ambient-occlusion)
-    * [Soft Shadows](#soft-shadows)
-    * [Emissive Materials / Area Lights](#emissive-materials--area-lights)
-    * [Teasers](#teasers)
-    * [Recording](#recording)
-* [Source Code &amp; Executable](#source-code-executable)
+- [Table of Contents](#table-of-contents)
+- [Overview](#overview)
+  - [1. Voxelization](#1-voxelization)
+    - [1.1. Voxel Structure](#11-voxel-structure)
+    - [1.2. Dynamic Voxelization](#12-dynamic-voxelization)
+  - [2. Voxel Illumination](#2-voxel-illumination)
+    - [2.1. Normal-Weighted Attenuation](#21-normal-weighted-attenuation)
+    - [2.2. Voxel Occlusion](#22-voxel-occlusion)
+      - [2.2.1. Soft Voxel Shadows](#221-soft-voxel-shadows)
+    - [2.3. Emission](#23-emission)
+  - [3. Anisotropic Voxels](#3-anisotropic-voxels)
+  - [4. Voxel Cone Tracing](#4-voxel-cone-tracing)
+    - [4.1. Indirect Illumination](#41-indirect-illumination)
+    - [4.2. Ambient Occlusion](#42-ambient-occlusion)
+    - [4.3. Soft Shadows](#43-soft-shadows)
+  - [Voxel Global Illumination](#voxel-global-illumination)
+- [Results](#results)
+  - [Voxelization](#voxelization)
+  - [Voxel Illumination](#voxel-illumination)
+  - [Voxel Cone Tracing](#voxel-cone-tracing)
+  - [Comparison](#comparison)
+    - [Optimizations](#optimizations)
+  - [Show Off](#show-off)
+    - [Dynamic Update](#dynamic-update)
+    - [Indirect Lighting](#indirect-lighting)
+    - [Ambient Occlusion](#ambient-occlusion)
+    - [Soft Shadows](#soft-shadows)
+    - [Emissive Materials / Area Lights](#emissive-materials--area-lights)
+    - [Teasers](#teasers)
+    - [Recording](#recording)
+- [Source Code & Executable](#source-code--executable)
 
 # Overview
 
