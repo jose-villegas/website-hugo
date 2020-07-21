@@ -81,15 +81,32 @@ imageAtomicRGBA8Avg(voxelEmission, position, emissive);
 ...
 ```
 
-<div class="image-table">
-{{% md %}}
-
-| Scene | Average Albedo | Average Normal | Average Emission |
-|-------|----------------|----------------|------------------|
-<img src="http://res.cloudinary.com/jose-villegas/image/upload/v1497323827/DVSGI/scene_culelk.png" style="width: 100%;"/>|<img src="http://res.cloudinary.com/jose-villegas/image/upload/v1497323820/DVSGI/v_albedo_qtc4ov.png" style="width: 100%;"/>|<img src="http://res.cloudinary.com/jose-villegas/image/upload/v1497323804/DVSGI/v_normal_ryzmrh.png" style="width: 100%;"/>|<img src="http://res.cloudinary.com/jose-villegas/image/upload/v1497323828/DVSGI/v_emission_aibyaf.png" style="width: 100%;"/>
-
-{{% /md %}}
-</div>
+<table class="table">
+  <thead>
+    <tr>
+      <th scope="col">Scene</th>
+      <th scope="col">Albedo</th>
+      <th scope="col">Normal</th>
+      <th scope="col">Emission</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td scope="row">
+        <img src="http://res.cloudinary.com/jose-villegas/image/upload/v1497323827/DVSGI/scene_culelk.png" class="img-responsive center-block" alt="Scene">
+      </td>
+      <td>
+        <img src="http://res.cloudinary.com/jose-villegas/image/upload/v1497323820/DVSGI/v_albedo_qtc4ov.png" class="img-responsive center-block" alt="Albedo">
+      </td>
+      <td>
+        <img src="http://res.cloudinary.com/jose-villegas/image/upload/v1497323804/DVSGI/v_normal_ryzmrh.png" class="img-responsive center-block" alt="Normal">
+      </td>
+      <td>
+        <img src="http://res.cloudinary.com/jose-villegas/image/upload/v1497323828/DVSGI/v_emission_aibyaf.png" class="img-responsive center-block" alt="Emission">
+      </td>
+    </tr>
+  </tbody>
+</table>
 
 ### 1.1. Voxel Structure
 
@@ -124,15 +141,24 @@ The second step is voxel illumination, for this we calculate the outgoing radian
 
 One of the advantages of this technique is that it's compatible with all standard light types like point, spot and directional lights, another is that we don't need shadow maps, though they can help greatly with precision specially for directional lights. Other techniques calculate the voxel radiance per light's shadow map, meaning that for every shadow-mapped light that wants to contribute to the voxel radiance the illumination step has to be repeated.
 
-<div class="image-table">
-{{% md %}}
-
-| Scene | Voxel Direct Lighting |
-|:-----:|:---------------------:|
-<img src="http://res.cloudinary.com/jose-villegas/image/upload/v1497323827/DVSGI/scene_culelk.png" style="width: 50%"/>|<img src="http://res.cloudinary.com/jose-villegas/image/upload/v1497323829/DVSGI/v_direct_vrnajc.png" style="width: 50%"/>
-
-{{% /md %}}
-</div>
+<table class="table">
+  <thead>
+    <tr>
+      <th scope="col">Scene</th>
+      <th scope="col">Voxel Direct Lighting</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td scope="row">
+        <img src="http://res.cloudinary.com/jose-villegas/image/upload/v1497323827/DVSGI/scene_culelk.png" class="img-responsive center-block" alt="Scene">
+      </td>
+      <td>
+        <img src="http://res.cloudinary.com/jose-villegas/image/upload/v1497323829/DVSGI/v_direct_vrnajc.png" class="img-responsive center-block" alt="Voxel direct lighting">
+      </td>
+    </tr>
+  </tbody>
+</table>
 
 ### 2.1. Normal-Weighted Attenuation
 
@@ -170,15 +196,33 @@ V_\{r\} &= L\_\{i\}\frac{\rho}{\pi}(W_x D_x + W_y D_y + W_z D_z)
 \end{equation}
 where \\(L_i\\) is the light source intensity, \\(\rho\\) the voxel albedo, \\(N\\) the normal vector of the voxel and \\(\Psi\\) the light direction.
 
-<div class="image-table">
-{{% md %}}
+<!-- <div class="img-comp-container">
+  <div class="img-comp-img">
+    <img src="http://res.cloudinary.com/jose-villegas/image/upload/v1497414410/DVSGI/shading_standard_e7vzft.png">
+  </div>
+  <div class="img-comp-img img-comp-overlay">
+    <img src="http://res.cloudinary.com/jose-villegas/image/upload/v1497414410/DVSGI/shading_directional_uwyxxw.png">
+  </div>
+</div> -->
 
-| Normal Attenuation | Normal-weighted Attenuation |
-|--------------------|-----------------------------|
-<img src="http://res.cloudinary.com/jose-villegas/image/upload/v1497414410/DVSGI/shading_standard_e7vzft.png" style="width: 100%;"/>|<img src="http://res.cloudinary.com/jose-villegas/image/upload/v1497414410/DVSGI/shading_directional_uwyxxw.png" style="width: 100%;"/>
-
-{{% /md %}}
-</div>
+<table class="table">
+  <thead>
+    <tr>
+      <th scope="col">Original</th>
+      <th scope="col">Normal Weighted Attenuation</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td scope="row">
+        <img src="http://res.cloudinary.com/jose-villegas/image/upload/v1497414410/DVSGI/shading_standard_e7vzft.png" class="img-responsive center-block" alt="Scene">
+      </td>
+      <td>
+        <img src="http://res.cloudinary.com/jose-villegas/image/upload/v1497414410/DVSGI/shading_directional_uwyxxw.png" class="img-responsive center-block" alt="Voxel direct lighting">
+      </td>
+    </tr>
+  </tbody>
+</table>
 
 ### 2.2. Voxel Occlusion
 
@@ -192,17 +236,33 @@ My proposal also computes occlusion using raycasting within a volume. Any of the
 
 Instead of stopping the ray as soon a voxel is found, soft shadows can be approximated with a single ray accumulating a value \\(\kappa\\) per collision and dividing by the traced distance \\(t\\), i.e. \\(\nu = \nu + (1 - \nu)\kappa\div t\\), where \\(1 - \nu\\) represents the occlusion value after the accumulation is finished. This technique exploits the observation that, from the light point of view, the number of collisions will usually be higher for the rays that pass through the borders of the voxelized geometry.
 
-<div class="image-table">
-{{% md %}}
+<table class="table">
+  <thead>
+    <tr>
+      <th scope="col">Hard Voxel Shadows</th>
+      <th scope="col">Soft Voxel Shadows</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td scope="row">
+        <img src="http://res.cloudinary.com/jose-villegas/image/upload/v1497500701/DVSGI/hard_voxel_shadows_ovj32i.svg" class="img-responsive center-block" alt="Scene">
+      </td>
+      <td>
+        <img src="http://res.cloudinary.com/jose-villegas/image/upload/v1497500702/DVSGI/soft_voxel_shadows_gcmlzm.svg" class="img-responsive center-block" alt="Voxel direct lighting">
+      </td>
+    </tr>
+    <tr>
+      <td scope="row">
+        <img src="http://res.cloudinary.com/jose-villegas/image/upload/v1497500851/DVSGI/hard_traced_takadd.png" class="img-responsive center-block" alt="Scene">
+      </td>
+      <td>
+        <img src="http://res.cloudinary.com/jose-villegas/image/upload/v1497500853/DVSGI/soft_traced_upabyg.png" class="img-responsive center-block" alt="Voxel direct lighting">
+      </td>
+    </tr>
+  </tbody>
+</table>
 
-| Hard Voxel Shadows | Soft Voxel Shadows |
-|:------------------:|:------------------:|
-<img src="http://res.cloudinary.com/jose-villegas/image/upload/v1497500701/DVSGI/hard_voxel_shadows_ovj32i.svg" style="width: 49%;"/>|<img src="http://res.cloudinary.com/jose-villegas/image/upload/v1497500702/DVSGI/soft_voxel_shadows_gcmlzm.svg" style="width: 49%;"/>
-&nbsp;|&nbsp;
-<img src="http://res.cloudinary.com/jose-villegas/image/upload/v1497500851/DVSGI/hard_traced_takadd.png" style="width: 100%;"/>|<img src="http://res.cloudinary.com/jose-villegas/image/upload/v1497500853/DVSGI/soft_traced_upabyg.png" style="width: 100%;"/>
-
-{{% /md %}}
-</div>
 
 ### 2.3. Emission
 
@@ -254,15 +314,38 @@ Indirect lighting is approximated with a crude Monte Carlo approximation. The he
 
 The distribution of the cones matches the shape of the BRDF, for a Blinn-Phong material a few large cones distributed over the normal oriented hemisphere estimate the diffuse reflection, while a single cone in the reflected direction, where its aperture depends on the specular exponent, approximates the specular reflection.
 
-<div class="image-table">
+<!-- <div class="image-table">
 {{% md %}}
 
-| Diffuse Cones | Specular Cone | BRDF |
-|:-------------:|:-------------:|:----:|
-<img src="http://res.cloudinary.com/jose-villegas/image/upload/v1497581804/DVSGI/diffuse_cones_oo7hsx.svg" style="width: 60%;"/>|<img src="http://res.cloudinary.com/jose-villegas/image/upload/v1497581807/DVSGI/specular_cones_faycaz.svg" style="width: 60%;"/>|<img src="https://res.cloudinary.com/jose-villegas/image/upload/v1497581810/DVSGI/brdf_cones_b4hmdk.svg" style="width: 60%;"/>
+|                                                          Diffuse Cones                                                           |                                                           Specular Cone                                                           |                                                              BRDF                                                              |
+| :------------------------------------------------------------------------------------------------------------------------------: | :-------------------------------------------------------------------------------------------------------------------------------: | :----------------------------------------------------------------------------------------------------------------------------: |
+| <img src="http://res.cloudinary.com/jose-villegas/image/upload/v1497581804/DVSGI/diffuse_cones_oo7hsx.svg" style="width: 60%;"/> | <img src="http://res.cloudinary.com/jose-villegas/image/upload/v1497581807/DVSGI/specular_cones_faycaz.svg" style="width: 60%;"/> | <img src="https://res.cloudinary.com/jose-villegas/image/upload/v1497581810/DVSGI/brdf_cones_b4hmdk.svg" style="width: 60%;"/> |
 
 {{% /md %}}
-</div>
+</div> -->
+
+<table class="table">
+  <thead>
+    <tr>
+      <th scope="col">Diffuse Cones</th>
+      <th scope="col">Specular Cone</th>
+      <th scope="col">BDRF</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td scope="row">
+        <img src="http://res.cloudinary.com/jose-villegas/image/upload/v1497581804/DVSGI/diffuse_cones_oo7hsx.svg" class="img-responsive center-block" alt="Scene">
+      </td>
+      <td>
+        <img src="http://res.cloudinary.com/jose-villegas/image/upload/v1497581807/DVSGI/specular_cones_faycaz.svg" class="img-responsive center-block" alt="Voxel direct lighting">
+      </td>
+      <td scope="row">
+        <img src="https://res.cloudinary.com/jose-villegas/image/upload/v1497581810/DVSGI/brdf_cones_b4hmdk.svg" class="img-responsive center-block" alt="Scene">
+      </td>
+    </tr>
+  </tbody>
+</table>
 
 ### 4.2. Ambient Occlusion
 
@@ -292,33 +375,77 @@ For each voxel we use its averaged normal vector to generate a set of cones arou
 
 The results here were tested on an AMD 380 R9 GPU on different scenes with increasing geometric complexity and dynamic objects added to the scene. The scenes used for testing are listed below:
 
-<div class="data-table">
-{{% md %}}
-
-| Name | Model | \# Vertices | \# Triangles |
-|:----:|:-----:|:----------:|:------------:|
-S1|[Cornell Box](http://graphics.cs.williams.edu/data/meshes.xml)|72|36
-S2|[Sibenik Cathedral](http://graphics.cs.williams.edu/data/meshes.xml)|40.479|75.283
-S3|[Crytek Sponza](http://www.crytek.com/cryengine/cryengine3/downloads)|153.635|278.163
-
-{{% /md %}}
-</div>
+<table class="table">
+  <thead>
+    <tr>
+      <th scope="col">Name</th>
+      <th scope="col">Model</th>
+      <th scope="col"># Vertices</th>
+      <th scope="col"># Triangles</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td scope="row">S1</td>
+      <td scope="row">
+        <a href="http://graphics.cs.williams.edu/data/meshes.xml">Cornell Box</a>
+      </td>
+      <td scope="row">72</td>
+      <td scope="row">36</td>
+    </tr>
+    <tr>
+      <td scope="row">S2</td>
+      <td scope="row">
+        <a href="http://graphics.cs.williams.edu/data/meshes.xml">Sibenik Cathedral</a>
+      </td>
+      <td scope="row">40.479</td>
+      <td scope="row">75.283</td>
+    </tr>
+    <tr>
+      <td scope="row">S3</td>
+      <td scope="row">
+        <a href="http://www.crytek.com/cryengine/cryengine3/downloads">Crytek Sponza</a>
+      </td>
+      <td scope="row">153.635</td>
+      <td scope="row">278.163</td>
+    </tr>
+  </tbody>
+</table>
 
 ## Voxelization
 
 The times per frame for the dynamic and static voxelization of each scene are show below: 
 
-<div class="data-table">
-{{% md %}}
-
-| Name | Static | Clear Dynamic | Dynamic |
-|:----:|:------:|:-------------:|:-------:|
-S1|0.51 ms|0.78 ms|1.30 ms
-S2|1.80 ms| 0.58 ms| 2.11 ms
-S3|11.29 ms| 0.60 ms| 2.03 ms
-
-{{% /md %}}
-</div>
+<table class="table">
+  <thead>
+    <tr>
+      <th scope="col">Name</th>
+      <th scope="col">Static</th>
+      <th scope="col">Clear Dynamic</th>
+      <th scope="col">Dynamic</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td scope="row">S1</td>
+      <td scope="row">0.51 ms</td>
+      <td scope="row">0.78 ms</td>
+      <td scope="row">1.30 ms</td>
+    </tr>
+    <tr>
+      <td scope="row">S2</td>
+      <td scope="row">1.80 ms</td>
+      <td scope="row">0.58 ms</td>
+      <td scope="row">2.11 ms</td>
+    </tr>
+    <tr>
+      <td scope="row">S3</td>
+      <td scope="row">11.29 ms</td>
+      <td scope="row">0.60 ms</td>
+      <td scope="row">2.03 ms</td>
+    </tr>
+  </tbody>
+</table>
 
 For the voxelization process, a higher resolution for the voxel representation can actually be beneficial, because it reduces thread collisions for the writing operations, in the scene S3 there is a higher time for the static voxelization this reason, S3 has a higher triangle density per voxel meaning more syncing operations are needed.
 
@@ -326,61 +453,135 @@ For the voxelization process, a higher resolution for the voxel representation c
 
 The table below shows the results for voxel direct illumination with shadow mapping or raycasting for voxel occlusion and voxel global illumination, it also includes the time for anisotropic filtering after both steps. For voxel direct illumination the times are similar between all scenes using shadow mapping, while raycasting costs more performance it enables occlusion for any type of light source without shadow mapping.
 
-<div class="data-table">
-{{% md %}}
-
-| Name | Direct (with Shadow Mapping) | Direct (with Raycasting) | Anistropic Filtering | Global Illumination | Anistropic Filtering |
-|:----:|:----------------------------:|:------------------------:|:--------------------:|:-------------------:|:--------------------:|
-S1|1.33 ms|20.32 ms|1.39 ms|8.41 ms|1.38 ms
-S2|0.95 ms|4.57 ms|1.38 ms|3.88 ms|1.37 ms
-S3|1.13 ms|3.31 ms|1.37 ms|5.44 ms|1.38 ms
-
-{{% /md %}}
-</div>
+<table class="table">
+<thead>
+<tr>
+<th>Name</th>
+<th>Direct (with Shadow Mapping)</th>
+<th>Direct (with Raycasting)</th>
+<th>Anistropic Filtering</th>
+<th>Global Illumination</th>
+<th>Anistropic Filtering</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>S1</td>
+<td>1.33 ms</td>
+<td>20.32 ms</td>
+<td>1.39 ms</td>
+<td>8.41 ms</td>
+<td>1.38 ms</td>
+</tr>
+<tr>
+<td>S2</td>
+<td>0.95 ms</td>
+<td>4.57 ms</td>
+<td>1.38 ms</td>
+<td>3.88 ms</td>
+<td>1.37 ms</td>
+</tr>
+<tr>
+<td>S3</td>
+<td>1.13 ms</td>
+<td>3.31 ms</td>
+<td>1.37 ms</td>
+<td>5.44 ms</td>
+<td>1.38 ms</td>
+</tr>
+</tbody>
+</table>
 
 For raycasting, the amount of empty space in the scene affects how early the traced rays end, which affects the general performance. For high density scenes such as S3 most rays end early, in contrast the scene S1 takes a considerable amount of time using raycasting because the scene is mostly empty space, this same condition also applies for the voxel indirect diffuse step.
 
-<div class="image-table">
-{{% md %}}
-
-| Scene | Voxel Direct | Voxel Direct + Indirect Diffuse |
-|:-----:|:------------:|:-------------------------------:|
-<img src="http://res.cloudinary.com/jose-villegas/image/upload/v1497742010/DVSGI/cornell_scene.png" style="width: 100%;"/>|<img src="http://res.cloudinary.com/jose-villegas/image/upload/v1497740284/DVSGI/direct_voxel_cornell.png" style="width: 100%;"/>|<img src="http://res.cloudinary.com/jose-villegas/image/upload/v1497740284/DVSGI/gi_voxel_cornell.png" style="width: 100%;"/>
-<img src="http://res.cloudinary.com/jose-villegas/image/upload/v1497742010/DVSGI/sibenik_scene.png" style="width: 100%;"/>|<img src="http://res.cloudinary.com/jose-villegas/image/upload/v1497740284/DVSGI/voxel_direct_sibenik.png" style="width: 100%;"/>|<img src="http://res.cloudinary.com/jose-villegas/image/upload/v1497740284/DVSGI/voxel_gi_sibenik.png" style="width: 100%;"/>
-<img src="http://res.cloudinary.com/jose-villegas/image/upload/v1497742010/DVSGI/sponza_scene.png" style="width: 100%;"/>|<img src="http://res.cloudinary.com/jose-villegas/image/upload/v1497740284/DVSGI/voxel_direct_sponza.png" style="width: 100%;"/>|<img src="http://res.cloudinary.com/jose-villegas/image/upload/v1497740284/DVSGI/voxel_gi_sponza.png" style="width: 100%;"/>
-
-{{% /md %}}
-</div>
+<table class="table">
+<thead>
+<tr>
+<th>Scene</th>
+<th>Voxel Direct</th>
+<th>Voxel Direct + Indirect Diffuse</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><img src="http://res.cloudinary.com/jose-villegas/image/upload/v1497742010/DVSGI/cornell_scene.png" style="width: 100%;"/></td>
+<td><img src="http://res.cloudinary.com/jose-villegas/image/upload/v1497740284/DVSGI/direct_voxel_cornell.png" style="width: 100%;"/></td>
+<td><img src="http://res.cloudinary.com/jose-villegas/image/upload/v1497740284/DVSGI/gi_voxel_cornell.png" style="width: 100%;"/></td>
+</tr>
+<tr>
+<td><img src="http://res.cloudinary.com/jose-villegas/image/upload/v1497742010/DVSGI/sibenik_scene.png" style="width: 100%;"/></td>
+<td><img src="http://res.cloudinary.com/jose-villegas/image/upload/v1497740284/DVSGI/voxel_direct_sibenik.png" style="width: 100%;"/></td>
+<td><img src="http://res.cloudinary.com/jose-villegas/image/upload/v1497740284/DVSGI/voxel_gi_sibenik.png" style="width: 100%;"/></td>
+</tr>
+<tr>
+<td><img src="http://res.cloudinary.com/jose-villegas/image/upload/v1497742010/DVSGI/sponza_scene.png" style="width: 100%;"/></td>
+<td><img src="http://res.cloudinary.com/jose-villegas/image/upload/v1497740284/DVSGI/voxel_direct_sponza.png" style="width: 100%;"/></td>
+<td><img src="http://res.cloudinary.com/jose-villegas/image/upload/v1497740284/DVSGI/voxel_gi_sponza.png" style="width: 100%;"/></td>
+</tr>
+</tbody>
+</table>
 
 ## Voxel Cone Tracing
 
 Once the voxel structure is anisotropically filtered we can proceed with voxel cone tracing per pixel for the final composition of the image. In my approach six cones with an aperture of 60 degrees are used to approximate the indirect diffuse term, for the indirect specular in these test I utilize a specular cone with an aperture of 10 degrees. The next table shows the performance for indirect lighting on different scenes. For all the scenes my implementation achieves results over 30FPS (\\(< 33.3 ms\\)) under constant dynamic update, meaning objects and lights are changing and moving per frame. The dynamic update includes dynamic voxelization, voxel direct illumination, voxel global illumination and the necessary anistropic filtering steps. For a screen resolution of \\(1920x1080\\) pixels my implementation obtains an average framerate of \\(28.57 ms\\) for the scene S3, \\(27.02 ms\\) for S2 and \\(27.77 ms\\) for S1 under constant dynamic update, these results show that even with a high resolution the technique can achieve over 30FPS for all the scenes.
 
-<div class="data-table">
-{{% md %}}
+<table class="table">
+<thead>
+<tr>
+<th>Scene</th>
+<th>Direct</th>
+<th>Indirect (Diffuse + Specular)</th>
+<th>Direct + Indirect</th>
+<th>Dynamic Stress</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>S1</td>
+<td>1.03 ms</td>
+<td>7.27 ms</td>
+<td>7.67 ms</td>
+<td>17.81 ms</td>
+</tr>
+<tr>
+<td>S2</td>
+<td>1.32 ms</td>
+<td>7.62 ms</td>
+<td>8.32 ms</td>
+<td>17.60 ms</td>
+</tr>
+<tr>
+<td>S3</td>
+<td>1.34 ms</td>
+<td>7.81 ms</td>
+<td>8.41 ms</td>
+<td>16.97 ms</td>
+</tr>
+</tbody>
+</table>
 
-|Scene | Direct | Indirect (Diffuse + Specular) | Direct + Indirect | Dynamic Stress |
-|:----:|:------:|:-----------------------------:|:-----------------:|:--------------:|
-S1 | 1.03 ms | 7.27 ms | 7.67 ms | 17.81 ms |
-S2 | 1.32 ms | 7.62 ms | 8.32 ms | 17.60 ms |
-S3 | 1.34 ms | 7.81 ms | 8.41 ms | 16.97 ms |
-
-{{% /md %}}
-</div>
 
 ## Comparison
 
 Below a visual comparison between a reference image rendered in a path-tracer for 3 hours, another real time global illumination technique called [light propagation volumes](http://www.crytek.com/download/Light_Propagation_Volumes.pdf) and my technique. The image generated by my technique is closer to the reference image, specially the indirect diffuse reaching the right columns that aren't directly hit by the light source. Light propagation volumes is also limited in the sense that it only provides approximation for the indirect diffuse term, whereas voxel cone tracing achieves specular reflection and many other light phenomena.
 
-<div class="image-table">
-{{% md %}}
+<table class="table">
+<thead>
+<tr>
+<th>Reference (3~ hours)</th>
+<th><a href="http://www.crytek.com/download/Light_Propagation_Volumes.pdf">Light Propagation Volumes</a> (18.86 ms)</th>
+<th>My approach (17.34 ms)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><img src="http://res.cloudinary.com/jose-villegas/image/upload/v1497758681/DVSGI/reference.png" style="width: 100%;"/></td>
+<td><img src="http://res.cloudinary.com/jose-villegas/image/upload/v1497758675/DVSGI/lpv_comp.png" style="width: 100%;"/></td>
+<td><img src="https://res.cloudinary.com/jose-villegas/image/upload/v1497758664/DVSGI/sponza_comp.png" style="width: 100%;"/></td>
+</tr>
+</tbody>
+</table>
 
-| Reference (3~ hours) | [Light Propagation Volumes](http://www.crytek.com/download/Light_Propagation_Volumes.pdf) (18.86 ms) | My approach (17.34 ms) |
-|:------:|:------:|:------:|
-<img src="http://res.cloudinary.com/jose-villegas/image/upload/v1497758681/DVSGI/reference.png" style="width: 100%;"/>|<img src="http://res.cloudinary.com/jose-villegas/image/upload/v1497758675/DVSGI/lpv_comp.png" style="width: 100%;"/>|<img src="https://res.cloudinary.com/jose-villegas/image/upload/v1497758664/DVSGI/sponza_comp.png" style="width: 100%;"/>
-
-{{% /md %}}
-</div>
 
 ### Optimizations
 
@@ -394,7 +595,7 @@ One optimization to consider that wasn't implemented in my application is to sep
 
 ### Dynamic Update
 
-<div class="image-table">
+<div class="table">
 <table>
   <tr>
     <th>Cornell Box</th>
@@ -426,7 +627,7 @@ One optimization to consider that wasn't implemented in my application is to sep
 
 ### Indirect Lighting
 
-<div class="image-table">
+<div class="table">
 <table>
   <tr>
     <th>Emissive Material</th>
@@ -451,53 +652,84 @@ One optimization to consider that wasn't implemented in my application is to sep
 
 ### Ambient Occlusion
 
-<div class="image-table">
-{{% md %}}
+<table class="table">
+<thead>
+<tr>
+<th>Cornell Box</th>
+<th>Sibenik Cathedral</th>
+<th>Crytek Sponza</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><img src="http://res.cloudinary.com/jose-villegas/image/upload/v1497758102/DVSGI/cornell_ao.png" style="width: 100%;"/></td>
+<td><img src="http://res.cloudinary.com/jose-villegas/image/upload/v1497758116/DVSGI/sibenik_ao.png" style="width: 100%;"/></td>
+<td><img src="http://res.cloudinary.com/jose-villegas/image/upload/v1497758109/DVSGI/sponza_ao.png" style="width: 100%;"/></td>
+</tr>
+</tbody>
+</table>
 
-| Cornell Box | Sibenik Cathedral | Crytek Sponza |
-|:-----------:|:-----------------:|:-------------:|
-<img src="http://res.cloudinary.com/jose-villegas/image/upload/v1497758102/DVSGI/cornell_ao.png" style="width: 100%;"/>|<img src="http://res.cloudinary.com/jose-villegas/image/upload/v1497758116/DVSGI/sibenik_ao.png" style="width: 100%;"/>|<img src="http://res.cloudinary.com/jose-villegas/image/upload/v1497758109/DVSGI/sponza_ao.png" style="width: 100%;"/>
-
-{{% /md %}}
-</div>
 
 ### Soft Shadows
 
-<div class="image-table">
-{{% md %}}
+<table class="table">
+<thead>
+<tr>
+<th>1 degree aperture</th>
+<th>5 degree aperture</th>
+<th>10 degree aperture</th>
+<th>25 degree aperture</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><img src="https://res.cloudinary.com/jose-villegas/image/upload/v1497758213/DVSGI/shadow_1.png" style="width: 100%;"/></td>
+<td><img src="https://res.cloudinary.com/jose-villegas/image/upload/v1497758213/DVSGI/shadow_5.png" style="width: 100%;"/></td>
+<td><img src="https://res.cloudinary.com/jose-villegas/image/upload/v1497758213/DVSGI/shadow_10.png" style="width: 100%;"/></td>
+<td><img src="https://res.cloudinary.com/jose-villegas/image/upload/v1497758213/DVSGI/shadow_25.png" style="width: 100%;"/></td>
+</tr>
+</tbody>
+</table>
 
-| 1 degree aperture | 5 degree aperture | 10 degree aperture | 25 degree aperture |
-|:------:|:------:|:------:|:------:|
-<img src="https://res.cloudinary.com/jose-villegas/image/upload/v1497758213/DVSGI/shadow_1.png" style="width: 100%;"/>|<img src="https://res.cloudinary.com/jose-villegas/image/upload/v1497758213/DVSGI/shadow_5.png" style="width: 100%;"/>|<img src="https://res.cloudinary.com/jose-villegas/image/upload/v1497758213/DVSGI/shadow_10.png" style="width: 100%;"/>|<img src="https://res.cloudinary.com/jose-villegas/image/upload/v1497758213/DVSGI/shadow_25.png" style="width: 100%;"/>
-
-{{% /md %}}
-</div>
 
 ### Emissive Materials / Area Lights
 
-<div class="image-table">
-{{% md %}}
+<table class="table">
+<thead>
+<tr>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><img src="http://res.cloudinary.com/jose-villegas/image/upload/v1497758681/DVSGI/area_sponza.png" style="width: 100%;"/></td>
+<td><img src="http://res.cloudinary.com/jose-villegas/image/upload/v1497758675/DVSGI/area_shadows.png" style="width: 100%;"/></td>
+</tr>
+<tr>
+<td><img src="http://res.cloudinary.com/jose-villegas/image/upload/v1497758681/DVSGI/fine_emissive.png" style="width: 100%;"/></td>
+<td><img src="http://res.cloudinary.com/jose-villegas/image/upload/v1497758675/DVSGI/area_teapot.png" style="width: 100%;"/></td>
+</tr>
+</tbody>
+</table>
 
-| &nbsp; | &nbsp; |
-|:------:|:------:|
-<img src="http://res.cloudinary.com/jose-villegas/image/upload/v1497758681/DVSGI/area_sponza.png" style="width: 100%;"/>|<img src="http://res.cloudinary.com/jose-villegas/image/upload/v1497758675/DVSGI/area_shadows.png" style="width: 100%;"/>
-<img src="http://res.cloudinary.com/jose-villegas/image/upload/v1497758681/DVSGI/fine_emissive.png" style="width: 100%;"/>|<img src="http://res.cloudinary.com/jose-villegas/image/upload/v1497758675/DVSGI/area_teapot.png" style="width: 100%;"/>
-
-{{% /md %}}
-</div>
 
 ### Teasers
 
-<div class="image-table">
-{{% md %}}
-
-| &nbsp; | &nbsp; |
-|:------:|:------:|
-<img src="http://res.cloudinary.com/jose-villegas/image/upload/v1497758681/DVSGI/teaser.png" style="width: 100%;"/>|<img src="http://res.cloudinary.com/jose-villegas/image/upload/v1497758675/DVSGI/teaser2.png" style="width: 100%;"/>
-<img src="http://res.cloudinary.com/jose-villegas/image/upload/v1497758681/DVSGI/teaser3.png" style="width: 100%;"/>|<img src="http://res.cloudinary.com/jose-villegas/image/upload/v1497758675/DVSGI/teaser4.png" style="width: 100%;"/>
-
-{{% /md %}}
-</div>
+<table class="table">
+<thead>
+<tr>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><img src="http://res.cloudinary.com/jose-villegas/image/upload/v1497758681/DVSGI/teaser.png" style="width: 100%;"/></td>
+<td><img src="http://res.cloudinary.com/jose-villegas/image/upload/v1497758675/DVSGI/teaser2.png" style="width: 100%;"/></td>
+</tr>
+<tr>
+<td><img src="http://res.cloudinary.com/jose-villegas/image/upload/v1497758681/DVSGI/teaser3.png" style="width: 100%;"/></td>
+<td><img src="http://res.cloudinary.com/jose-villegas/image/upload/v1497758675/DVSGI/teaser4.png" style="width: 100%;"/></td>
+</tr>
+</tbody>
+</table>
 
 ### Recording
 
