@@ -1,11 +1,25 @@
-+++
-date = "2016-11-06T13:00:25+05:30"
-title = "Get in touch"
-draft = false
-+++
+---
+date: "2016-11-06T13:00:25+05:30"
+title: "Get in touch"
+draft: false
+image: "https://res.cloudinary.com/jose-villegas/image/upload/v1595302391/WebPage/5597872486_43af8e948b_o.jpg"
+---
+You reach me out using the following:
 
-When she reached the first hills of the Italic Mountains, she had a last view back on the skyline of her hometown Bookmarksgrove, the headline of Alphabet Village and the subline of her own road, the Line Lane. Pityful a rethoric question ran over her cheek, then
+<div>
+    <a href="mailto:villegasjose.gg@gmail.com" data-animate-hover="pulse" class="email">
+        <i class="fa fa-envelope"></i> Email
+    </a>
+</div>
 
-Effects present letters inquiry no an removed or friends. Desire behind latter me though in. Supposing shameless am he engrossed up additions. My possible peculiar together to. Desire so better am cannot he up before points. Remember mistaken opinions it pleasure of debating. Court front maids forty if aware their at. Chicken use are pressed removed.
+<div>
+    <a href="https://www.linkedin.com/in/villegasjose" data-animate-hover="pulse">
+        <i class="fa fa-linkedin"></i> LinkedIn
+    </a>
+</div>
 
-Able an hope of body. Any nay shyness article matters own removal nothing his forming. Gay own additions education satisfied the perpetual. If he cause manor happy. Without farther she exposed saw man led. Along on happy could cease green oh. 
+<div>
+    <a href="https://github.com/jose-villegas" data-animate-hover="pulse">
+        <i class="fa fa-github"></i> GitHub
+    </a>
+</div>
