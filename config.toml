@@ -10,7 +10,7 @@ googleAnalytics = "UA-173116509-1"
 [params]
   # Use custom.css for your custom styling
   style = "default"
-  description = "Graphics & Game Programming"
+  description = "Game & Graphics Programming"
   copyright = "&copy;2016 José Villegas"
   sidebarAbout = [
     ""
