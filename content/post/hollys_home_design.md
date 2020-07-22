@@ -1,5 +1,5 @@
 ---
-title: "Holly's Home Design: Renovation Dreams"
+title: "Holly's Home Design"
 date: 2020-03-29T00:00:00+01:00
 showonlyimage: true
 draft: false
