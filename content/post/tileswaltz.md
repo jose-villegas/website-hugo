@@ -8,7 +8,7 @@ tags: ["unity", "games", "csharp"]
 image: "https://res.cloudinary.com/jose-villegas/image/upload/v1595458281/WebPage/privat.png"
 ---
 
-Tile's Waltz is a game I started developing during quarantine of the COVID-19 crisis. It's a puzzle game with a focus on memorization, you remove pieces from the level, when that piece is removed other pieces move to take their place, using this mechanic you need to combine 3 or more to get combos or powerful power ups. The game still in-development.
+Tile's Waltz is a game I started developing during quarantine of the COVID-19 crisis. It's a puzzle game with a focus on memorization, you remove pieces from the level, when that piece is removed other pieces move to take their place, using this mechanic you need to combine 3 or more pieces of the same color to get combos or powerful power ups. The game still in-development.
 <!--more-->
 
 The idea for the game came to me while bored on quarantine, I was watching a necklace my mom bought me when I was a teenager, this necklace is made of little pieces that look like the tiles in the game. So I started to imagine what kind of game I could make with this shape. The game source code can be found [here on my GitHub](https://github.com/jose-villegas/TilesWaltz). The APK releases can be found [here](https://github.com/jose-villegas/TilesWaltz/releases)
