@@ -1,5 +1,5 @@
 ---
-date: "2014-06-17T00:00:00+02:00"
+date: "2017-05-14T00:00:00+02:00"
 title: "Volume Rendering with Style Transfer Function"
 image: "https://github.com/jose-villegas/StyleTransferFunction/blob/master/screenshots/2.png?raw=true"
 showonlyimage: true

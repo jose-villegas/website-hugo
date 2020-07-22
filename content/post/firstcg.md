@@ -1,5 +1,5 @@
 ---
-date: "2015-01-22T00:00:00+01:00"
+date: "2014-12-03T00:00:00+01:00"
 title: "Computer Graphics Basic Mapping Techniques"
 image: "https://res.cloudinary.com/jose-villegas/image/upload/v1595459438/WebPage/cg.png"
 showonlyimage: true
@@ -9,7 +9,7 @@ categories: ["graphics"]
 tags: ["opengl", "c++", "effects"]
 ---
 
-When I first started to study computer graphics in my college, this was the first assignment, we implemented different real time rendering techniques for this project which included: object selection, translations, rotations and scaling, camera translation and rotation, refraction and reflection, point lights, directional lights, spot lights and shadow mapping.
+When I first started to study computer graphics in my college, this was one of the first assignments, we implemented different real time rendering techniques for this project which included: object selection, translations, rotations and scaling, camera translation and rotation, refraction and reflection, point lights, directional lights, spot lights and shadow mapping.
 <!--more-->
 
 This this was made with C++, using OpenGL, GLEW, SFML, GLM and AntWeakBar for the UI. The source code can be found on [my GitHub here](https://github.com/jose-villegas/NormalShadowRefr-Mapping).

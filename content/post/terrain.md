@@ -1,5 +1,5 @@
 ---
-date: "2015-04-10T00:00:00+02:00"
+date: "2017-06-19T00:00:00+02:00"
 title: "Simple Multi-texture Terrain Rendering"
 image: "https://camo.githubusercontent.com/e162381c407599525985d3e817fa46d2501eb9d0/687474703a2f2f692e696d6775722e636f6d2f6f4a454e6d38352e6a7067"
 showonlyimage: true
