@@ -9,9 +9,9 @@ categories: ["graphics"]
 tags: ["opengl", "c++", "global illumination", "voxels"]
 ---
 
-This was my master thesis for Computer Graphics, eventually I managed to publish a paper for this work.
-
 Computing indirect illumination is a challenging and complex problem for real-time rendering in 3D applications. This global illumination approach computes indirect lighting in real time utilizing a simpliﬁed version of the outgoing radiance and the scene stored in voxels.
+
+This was my master thesis for computer graphics, I also published a paper about this technique.
 <!--more-->
 
 # Table of Contents
