@@ -1,6 +1,6 @@
 ---
 date: "2017-01-12T00:00:00+02:00"
-title: "Low Poly Water in Unity"
+title: "Fur Rendering in Unity"
 image: "https://res.cloudinary.com/jose-villegas/image/upload/v1595437703/WebPage/fur.png"
 showonlyimage: true
 draft: false
