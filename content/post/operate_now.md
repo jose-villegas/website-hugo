@@ -19,6 +19,13 @@ With the time I took a more leading role over this project, since I had the most
 
 The game can be found on [Apple Store](https://apps.apple.com/us/app/operate-now-hospital/id1136678102) and [Google Play](https://play.google.com/store/apps/details?id=com.spilgames.OperateNow2&hl=en), here is a short gameplay video:
 
+<a href="https://apps.apple.com/us/app/operate-now-hospital/id1136678102">
+<img src="https://res.cloudinary.com/jose-villegas/image/upload/v1595387863/WebPage/Download_on_the_App_Store_Badge_US-UK_RGB_blk_092917.svg" height="60" width="120"/>
+</a>
+<a href="https://play.google.com/store/apps/details?id=com.spilgames.OperateNow2&hl=en">
+<img src="https://res.cloudinary.com/jose-villegas/image/upload/v1595387718/WebPage/google-play-badge.png" height="60"/>
+</a>
+
 {{< youtube 8l9dp3HUgoA >}}
 
 And some screenshots:
@@ -34,28 +41,3 @@ And some screenshots:
 <img src="https://res.cloudinary.com/jose-villegas/image/upload/v1595387226/WebPage/38411770_1177988569024355_721271119490842624_o.jpg.jpg" style="width: 100%;"/>
 
 <img src="https://res.cloudinary.com/jose-villegas/image/upload/v1595387195/WebPage/41907791_1221254218031123_5185958003857162240_o.jpg.jpg" style="width: 100%;"/>
-
-# Store Listing
-
-```
-Become a surgeon and build your own hospital.
-
-
-Have you got what it takes to become a world class surgeon and make your hospital the greatest medical center in the world?
-
-
-- BUILD, upgrade, and continually improve multiple hospitals and their facilities.
-
-- CUSTOMIZE your hospital with unique and crazy skins.
-
-- MANAGE your staff and improve their skills.
-
-- OPERATE your patients by performing incredibly realistic surgeries.
-
-- COLLECT staff members cards & boosters.
-
-- COMPLETE characters backstories and unravel their hidden past.
-
-
-Join Operate Now's player community: Operate Now's franchise has been downloaded over 40 million times by players all around the globe.
-```

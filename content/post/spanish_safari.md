@@ -19,7 +19,11 @@ As a developer I was in charge of many things, developing mechanics, data struct
 
 It was a really good experience where I learned a lot about team work in a professional environment, project management, communication, tasks estimations, coding standards, and many more things.
 
-Though the game isn't a popular success, albeit justified; the target is really specific, it has good ratings in the Apple Store, the game can be found [here](https://apps.apple.com/app/spanish-safari/id1126215060).
+Though the game isn't a popular success, albeit justified; the target is really specific, it has good ratings in the Apple Store.
+
+<a href="https://apps.apple.com/app/spanish-safari/id1126215060">
+    <img alt="appstore" src="https://res.cloudinary.com/jose-villegas/image/upload/v1595387863/WebPage/Download_on_the_App_Store_Badge_US-UK_RGB_blk_092917.svg" height="60" width="120">
+</a>
 
 Here are some screenshots from the game
 
@@ -30,57 +34,3 @@ Here are some screenshots from the game
 <img src="https://res.cloudinary.com/jose-villegas/image/upload/v1595375936/WebPage/OscarandFriends.png" style="width: 100%;"/>
 
 <img src="https://res.cloudinary.com/jose-villegas/image/upload/v1595375951/WebPage/phone4.jpg" style="width: 100%;"/>
-
-# Store Listing
-
-```
-Spanish Safari is the easiest way to teach kids Spanish. Children are invited to join the World Explorers Organisation and help the animals in the savanna solve the mystery of the missing water!
-
-
-The game uses spaced repetition and gradual immersion to teach children in an effective, fun and meaningful way. Kids become enveloped in the world of the savanna where their new friends and special guide; Arturo the Monkey, will help them learn while solving the mystery.
-
-
-Spanish Safari Level 1 Features:
-
-- A giant 3D world to explore
-
-- 80+ lessons and quizzes
-
-- Over 25+ different interactive games
-
-- Spaced repetition of key Spanish vocabulary
-
-- Awesome animations with 3D characters
-
-- Common phrases and grammatical principles
-
-- 10 free lessons to try with an additional 70 available for purchase
-
-- Expertly designed for Children 4-9 years old
-
-
-Spanish Safari has been created by a team of passionate Teachers, Designers and Developers. Our goal has been for Children to enjoy the process of learning while doing what kids do best: playing!
-
-
-iOS Minimum Requirement:
-
-iOS 10 or higher
-
-
-Device Minimum Requirements:
-
-iPhone 5 or higher
-
-iPad 3rd Gen or higher
-
-iPad Mini 2nd Gen or higher
-
-iPad Air
-
-iPad Pro
-
-iPod Touch 6th Gen or higher
-
-
-More lessons and languages are currently being developed and are coming soon!
-```
