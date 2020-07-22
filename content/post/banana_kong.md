@@ -11,7 +11,7 @@ image: "https://res.cloudinary.com/jose-villegas/image/upload/v1595428279/WebPag
 Banana Kong is another game developed by [Gamaga](http://www.gamaga.com/), with more than 100M+ of installs, the game is published by [FDG Entertainment](https://www.fdg-entertainment.com/). Banana Kong is an endless runner platform game, you play as Kong you have to jump, avoid and smash different obstacles in the environment, there are many mechanics that change the way the character moves, it's a really fun game to play.
 <!--more-->
 
-I wasn't involved in this game during it's development, but the game required a couple of updates and bugfixes. I collaborated on estimating, bugfixing, consulting and maintenance for this game.
+I wasn't involved in this game during it's initial development, but the game required a couple of updates and bugfixes once in a while after it was "completed". I collaborated on estimating, bugfixing, consulting and maintenance for this game.
 
 The game can be found on [Apple Store](https://apps.apple.com/us/app/banana-kong/id510040874) and [Google Play](https://play.google.com/store/apps/details?id=com.fdgentertainment.bananakong&hl=en) the game has a lot of installs and really good reviews.
 
