@@ -6,7 +6,7 @@ showonlyimage: true
 draft: false
 weight: 0
 categories: ["graphics"]
-tags: ["shaders", "c#", "unity", "effect"]
+tags: ["shaders", "csharp", "unity", "effect"]
 ---
 
 I wanted to do a small tests with shaders in Unity to simulate water using sum of sines. This technique is well explained here in [GPU GEMS](https://developer.nvidia.com/sites/all/modules/custom/gpugems/books/GPUGems/gpugems_ch01.html). My twist was just using flat shading. The reposity was well received in my [GitHub](https://github.com/jose-villegas/LowPolyWater).

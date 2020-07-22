@@ -6,7 +6,7 @@ showonlyimage: true
 draft: false
 weight: 0
 categories: ["graphics"]
-tags: ["image processing", "c#"]
+tags: ["image processing", "csharp"]
 ---
 
 This program implements multiple image processing algorithms, such as edge detection, noise reduction, sharpening etc, part of a college assignment.

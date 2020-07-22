@@ -6,7 +6,7 @@ showonlyimage: true
 draft: false
 weight: 0
 categories: ["graphics"]
-tags: ["image processing", "c#"]
+tags: ["image processing", "csharp"]
 ---
 
 A simple height map generator utizling different noise generation techniques to obtain height maps that can be used for terrain generators or other applications. 
