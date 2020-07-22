@@ -1,0 +1,54 @@
+---
+date: "2015-02-28T00:00:00+01:00"
+title: "Image Processing"
+image: "https://camo.githubusercontent.com/65352d7998291e3eb0214c794bc0614ce3a1da08/687474703a2f2f692e696d6775722e636f6d2f7975557a6236692e706e67"
+showonlyimage: true
+draft: false
+weight: 0
+categories: ["graphics"]
+tags: ["image processing", "c#"]
+---
+
+This program implements multiple image processing algorithms, such as edge detection, noise reduction, sharpening etc, part of a college assignment.
+<!--more-->
+
+Image loader and processor focused on edge detection, using C# and image loading functions provided by Windows System, UI using Windows Forms. The source code for this project can be found [on my GitHub.](https://github.com/jose-villegas/Edge-Detection)
+
+Edge Detection Kernels:
+
+* Sobel (3x3, 5x5, 7x7, 9x9) <img src="https://res.cloudinary.com/jose-villegas/image/upload/v1595448584/WebPage/yuUzb6i.png" width="100%">
+* Roberts Cross (3x3) <img src="https://res.cloudinary.com/jose-villegas/image/upload/v1595448718/WebPage/Y8dsx0F.png" width="100%">
+* Prewitt (3x3, 5x5, 7x7) <img src="https://res.cloudinary.com/jose-villegas/image/upload/v1595448787/WebPage/vvFzfEZ.png" width="100%">
+* Laplacian Gaussian (3x3, 5x5, 7x7, 9x9) <img src="https://res.cloudinary.com/jose-villegas/image/upload/v1595448814/WebPage/E4gj3tQ.png" width="100%">
+
+Personal Kernel: Modified Sharpen Kernel <img src="https://res.cloudinary.com/jose-villegas/image/upload/v1595448843/WebPage/GM0mfKq.jpg" width="100%">
+
+Noise Reduction:
+
+* Average <img src="https://res.cloudinary.com/jose-villegas/image/upload/v1595448878/WebPage/98xGhRz.jpg" width="100%">
+* Median <img src="https://res.cloudinary.com/jose-villegas/image/upload/v1595448912/WebPage/l66KH4Y.jpg" width="100%">
+
+Image Scaling:
+
+* Bilinear
+* Nearest Neighbor
+* Bicubic
+
+Other Options:
+
+* Free Rotation
+* Horizontal / Vertical Mirror
+* Brigthness and Contrast
+* Negative
+* Threshold
+* RGB Histograms
+
+UI:
+
+<img src="https://res.cloudinary.com/jose-villegas/image/upload/v1595448455/WebPage/Oxv3Qgj.png" width="100%">
+
+<img src="https://res.cloudinary.com/jose-villegas/image/upload/v1595448471/WebPage/5u7w8WZ.png" width="100%">
+
+<img src="https://res.cloudinary.com/jose-villegas/image/upload/v1595448493/WebPage/k8uHGba.png" width="100%">
+
+<img src="https://res.cloudinary.com/jose-villegas/image/upload/v1595448515/WebPage/bYAJXQb.png" width="100%">
