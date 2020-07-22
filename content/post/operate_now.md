@@ -17,7 +17,7 @@ Operate Now: Hospital was the game I spent most time developing in Gamaga. I sta
 
 With the time I took a more leading role over this project, since I had the most experience with the source code at the time. This was a new experience for me, as now I was designing architectures for other programmers to follow, working directly with the client, estimating tasks for others, and being more involved in the management side of the project regarding programming.
 
-The game can be found on [Apple Store](https://apps.apple.com/us/app/operate-now-hospital/id1136678102) and [Google Play](https://play.google.com/store/apps/details?id=com.spilgames.OperateNow2&hl=en), here is a short gameplay video:
+The game can be found on [Apple Store](https://apps.apple.com/us/app/operate-now-hospital/id1136678102) and [Google Play](https://play.google.com/store/apps/details?id=com.spilgames.OperateNow2&hl=en).
 
 <a href="https://apps.apple.com/us/app/operate-now-hospital/id1136678102">
 <img src="https://res.cloudinary.com/jose-villegas/image/upload/v1595387863/WebPage/Download_on_the_App_Store_Badge_US-UK_RGB_blk_092917.svg" height="60" width="120"/>
@@ -26,6 +26,7 @@ The game can be found on [Apple Store](https://apps.apple.com/us/app/operate-now
 <img src="https://res.cloudinary.com/jose-villegas/image/upload/v1595387718/WebPage/google-play-badge.png" height="60"/>
 </a>
 
+Here is a short gameplay video:
 {{< youtube 8l9dp3HUgoA >}}
 
 And some screenshots:
