@@ -17,9 +17,9 @@ In Ollama you play as a ball in an isometric world, you have to get to certain p
 
 As a programmer getting art right can be hard so I tried to keep the style simple, the colors more pastel, and the character is just a ball. 
 
-While I'm no artist I did have a short introduction course on Graphic Design when I was a teenager, to this day some of the things I learned there, I still apply today. The game still pretty much programmer-art but I think it not-so-bad looking.
+While I'm no artist I did have a short introduction course on Graphic Design when I was a teenager, to this day some of the things I learned there, I still apply today. The game still pretty much programmer-art but I think it is not-so-bad looking.
 
-The world is filled with enemies that will shot at the player when he is range. Ollama has multiple abilities. It has the ability to squeeze itself in tight spots, you need to use this ability to get past certain areas and avoid the enemies, by pressing down the ball compresses. Ollama can also attack by jumping and pressing down to create a shoc-kwave that will knock out the enemies, the higher the jump the greater the shoc-kwave. And last Ollama can float, when you enter floating mode the ball will keep going up until you deflate, you combine this with Ollama's attack to create a really powerful shoc-kwave.
+The world is filled with enemies that will shot at the player when he is in range. Ollama has multiple abilities. It has the ability to squeeze itself in tight spots, you need to use this ability to get past certain areas and avoid the enemies, by pressing down the ball compresses. Ollama can also attack by jumping and pressing down to create a shoc-kwave that will knock out the enemies, the higher the jump the greater the shoc-kwave. And last Ollama can float, when you enter floating mode the ball will keep going up until you deflate, you combine this with Ollama's attack to create a really powerful shoc-kwave.
 
 The player movement is also bound to the orientation of the world, the player only moves in two axis, horizontal and vertical, you need to rotate the world so the player can move in a rotated horizontal axis.
 
