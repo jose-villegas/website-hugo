@@ -27,7 +27,7 @@ The game was made with Unity 5.5.3 at the time so it's quite old. But the source
 
 Some screenshots of the game:
 
-<img src="https://res.cloudinary.com/jose-villegas/image/upload/v1595364395/WebPage/0001-0250.gif" style="width: 100%;"/>
+<img src="https://res.cloudinary.com/jose-villegas/image/upload/v1595364395/WebPage/intro.gif" style="width: 100%;"/>
 
 Creating a shockwave
 <img src="https://res.cloudinary.com/jose-villegas/image/upload/v1595365108/WebPage/shock.gif" style="width: 100%;"/>
