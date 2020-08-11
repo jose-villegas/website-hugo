@@ -8,7 +8,7 @@ tags: ["unity", "games", "csharp"]
 image: "https://res.cloudinary.com/jose-villegas/image/upload/v1595458281/WebPage/privat.png"
 ---
 
-Tile's Waltz is a game I started developing alone during quarantine for the COVID-19 crisis. It's a puzzle game with a focus on memorization, you remove pieces from the level, when that piece is removed other pieces move to take their place, using this mechanic you need to combine 3 or more pieces of the same color to get combos or powerful power ups. The game still in-development.
+Tile's Waltz is a game I started developing alone during quarantine for the COVID-19 crisis. It's a match-3 puzzle game with focus on memorization, you remove pieces from the level, when that piece is removed other pieces move to take their place, using this mechanic you need to combine 3 or more pieces of the same color to get combos or powerful power ups. The game still in-development.
 <!--more-->
 
 The idea for the game came to me while I was watching a wristband my mom bought me long ago, a bit of quarantine boredom basically, this wristband is made of little pieces that look like the tiles in the game. So I started to imagine what kind of game I could make with this shape. The game source code can be found [here on my GitHub](https://github.com/jose-villegas/TilesWaltz). The APK releases can be found [here](https://github.com/jose-villegas/TilesWaltz/releases)
@@ -31,7 +31,18 @@ In Tile's Waltz you play in a isometric perspective environment with a level mad
 
 When you remove a tile from the structure by pressing on it, the structure needs to "fill" that space again. For this the shortest path algorithm is used, when a tile is removed the shortest path to a "leaf" tile is found, a "leaf" tile is a tile that only has one connection. The tiles in this path will move to take the place of the removed tile, the first in the path will take the place of the removed, the second will take the place of the first, the third will take the place of the second and so on; and for the last position a new tile is added. This ends with a lot of possible combinations and ways to move tiles around in a level.
 
-<img src="https://github.com/jose-villegas/TilesWaltz/blob/master/Media/Animated/summary.gif?raw=true" alt="alt text" width="200">
+<table class="table">
+<thead>
+<tr>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center"><img src="https://github.com/jose-villegas/TilesWaltz/blob/master/Media/Animated/summary.gif?raw=true" alt="alt text" width="200">
+</td>
+</tr>
+</tbody>
+</table>
 
 ## Power Ups
 

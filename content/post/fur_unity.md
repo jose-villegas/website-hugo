@@ -6,7 +6,7 @@ showonlyimage: true
 draft: false
 weight: 0
 categories: ["graphics"]
-tags: ["shaders", "csharp", "unity", "effect"]
+tags: ["shaders", "csharp", "unity", "effects"]
 ---
 
 This is a small shader that implements fur rendering in Unity using shell texturing. The technique is well explained on this [paper](http://hhoppe.com/fur.pdf). Though easy to implement it was well received on my [GitHub](https://github.com/jose-villegas/FurRendering).
