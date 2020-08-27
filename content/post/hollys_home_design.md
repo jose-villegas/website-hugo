@@ -8,7 +8,7 @@ tags: ["unity", "development", "games", "csharp"]
 image: "https://res.cloudinary.com/jose-villegas/image/upload/v1595428393/WebPage/65115209_307812226766613_186315187379240960_o.png.png"
 ---
 
-Holly's Home Design is a home renovation game developed and published by [Gamaga](http://www.gamaga.com/). In Holly you play the life of a home renovator, in the game you can buy, renovate, design, decorate and sell houses in different towns. The game features realistic 3D environment and tons of decoration and furniture options.
+Holly's Home Design is a home renovation game developed and published by [Gamaga](https://www.gamaga.com/). In Holly you play the life of a home renovator, in the game you can buy, renovate, design, decorate and sell houses in different towns. The game features realistic 3D environment and tons of decoration and furniture options.
 <!--more-->
 
 On this game I was involved from the beginning, I got to experience our soft launch, and the game progression from scratch to a viable product. I was involved in developing and designing optimal architectures and data structures for the game, bug fixing, estimations, splitting tasks, graphical effects, optimizations, social features and game mechanics.

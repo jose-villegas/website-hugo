@@ -9,7 +9,7 @@ categories: ["graphics"]
 tags: ["opengl", "c++", "effects"]
 ---
 
-This technique implements style transfer functions for volume rendering, part of a college assignment. Style transfer is extremely convenient for volume rendering as it adds a really great dimension of realism with little overhead. The technique is based on this [paper](http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.230.9247&rep=rep1&type=pdf).
+This technique implements style transfer functions for volume rendering, part of a college assignment. Style transfer is extremely convenient for volume rendering as it adds a really great dimension of realism with little overhead. The technique is based on this [paper](https://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.230.9247&rep=rep1&type=pdf).
 <!--more-->
 
 The technique was implemented using Cinder, ImGui and GLM, to build the project you will need to setup these dependencies, the source code can be found [here on my GitHub](https://github.com/jose-villegas/StyleTransferFunction).

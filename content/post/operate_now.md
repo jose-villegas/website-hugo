@@ -8,7 +8,7 @@ tags: ["unity", "development", "games", "csharp"]
 image: "https://res.cloudinary.com/jose-villegas/image/upload/v1595378226/WebPage/14f948d7f8614faffd6205c915656cae.jpg"
 ---
 
-I moved to Chile to work with [Gamaga](http://www.gamaga.com/), I started with Operate Now: Hospital, a game published by [Spil Games](https://spilgames.com/) with more than 45M+ of installs. Operate Now is a hospital simulator, in the game you perform really realistic surgeries and follow a compelling storyline, while you also are in charge of running multiple hospitals, upgrading their departments, hiring and managing their staff and many other interesting mechanics.
+I moved to Chile to work with [Gamaga](https://www.gamaga.com/), I started with Operate Now: Hospital, a game published by [Spil Games](https://spilgames.com/) with more than 45M+ of installs. Operate Now is a hospital simulator, in the game you perform really realistic surgeries and follow a compelling storyline, while you also are in charge of running multiple hospitals, upgrading their departments, hiring and managing their staff and many other interesting mechanics.
 <!--more-->
 
 # Overview

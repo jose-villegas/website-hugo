@@ -8,7 +8,7 @@ tags: ["unity", "development", "games", "csharp"]
 image: "https://res.cloudinary.com/jose-villegas/image/upload/v1595428279/WebPage/bk_1080p_artwork_strand-1920x0-c-default.jpg"
 ---
 
-Banana Kong is another game developed by [Gamaga](http://www.gamaga.com/), with more than 100M+ of installs, the game is published by [FDG Entertainment](https://www.fdg-entertainment.com/). Banana Kong is an endless runner platform game, you play as Kong you have to jump, avoid and smash different obstacles in the environment, there are many mechanics that change the way the character moves, it's a really fun game to play.
+Banana Kong is another game developed by [Gamaga](https://www.gamaga.com/), with more than 100M+ of installs, the game is published by [FDG Entertainment](https://www.fdg-entertainment.com/). Banana Kong is an endless runner platform game, you play as Kong you have to jump, avoid and smash different obstacles in the environment, there are many mechanics that change the way the character moves, it's a really fun game to play.
 <!--more-->
 
 I wasn't involved in this game during it's initial development, but the game required a couple of updates and bugfixes once in a while after it was "completed". I collaborated on estimating, bugfixing, consulting and maintenance for this game.

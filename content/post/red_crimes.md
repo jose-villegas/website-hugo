@@ -8,7 +8,7 @@ tags: ["unity", "development", "games", "csharp"]
 image: "https://res.cloudinary.com/jose-villegas/image/upload/v1595428049/WebPage/49211084_333786903878711_4938011564788678656_o.jpg.jpg"
 ---
 
-Red Crimes is a crime thriller management game developed by [Gamaga](http://www.gamaga.com/) with support of [Investigation Discovery](www.investigationdiscovery.com), sadly the game is no longer supported. The game features realistic crime scenes with multiple game mechanics, focused on hidden objects, investigation, staff mangement and a compelling storyline.
+Red Crimes is a crime thriller management game developed by [Gamaga](https://www.gamaga.com/) with support of [Investigation Discovery](www.investigationdiscovery.com), sadly the game is no longer supported. The game features realistic crime scenes with multiple game mechanics, focused on hidden objects, investigation, staff mangement and a compelling storyline.
 <!--more-->
 
 Since the game borrowed lots of our already implemented systems in the games I had already worked for Gamaga, I had some input during the initial game development. This included adapting scripts for the game, finding useful code for the features, helping other colleagues and consulting.
