@@ -1,5 +1,5 @@
 ---
-title: "Tile's Waltz - A game born in quarentine"
+title: "Tile's Waltz - Something I made in quarentine"
 date: 2020-06-22T18:03:51-04:00
 showonlyimage: true
 draft: false
