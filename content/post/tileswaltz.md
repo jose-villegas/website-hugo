@@ -105,6 +105,8 @@ The game currently contains:
 * Level editor
 * Sharing and importing through text or QR
 * Basic tutorial
+* Spanish and English localization
+* Cloud save (would need to be uploaded to the store to work though)
 
 ## In Progress
 
