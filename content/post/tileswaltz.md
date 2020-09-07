@@ -5,7 +5,7 @@ showonlyimage: true
 draft: false
 categories: ["games"]
 tags: ["unity", "games", "csharp"]
-image: "https://res.cloudinary.com/jose-villegas/image/upload/v1595458281/WebPage/privat.png"
+image: "https://res.cloudinary.com/jose-villegas/image/upload/v1599493070/WebPage/mess.png"
 ---
 
 Tile's Waltz is a game I started developing alone during quarantine for the COVID-19 crisis. It's a match-3 puzzle game with focus on memorization, you remove pieces from the level, when that piece is removed other pieces move to take their place, using this mechanic you need to combine 3 or more pieces of the same color to get combos or powerful power ups. The game still in-development.
@@ -106,7 +106,7 @@ The game currently contains:
 * Sharing and importing through text or QR
 * Basic tutorial
 * Spanish and English localization
-* Cloud save (would need to be uploaded to the store to work though)
+* GPGPS integration and cloud save (would need to be uploaded to the store to work though)
 
 ## In Progress
 
