@@ -13,6 +13,18 @@ Tile's Waltz is a game I started developing alone during quarantine for the COVI
 
 The idea for the game came to me while I was watching a wristband my mom bought me long ago, a bit of quarantine boredom basically, this wristband is made of little pieces that look like the tiles in the game. So I started to imagine what kind of game I could make with this shape. The game source code can be found [here on my GitHub](https://github.com/jose-villegas/TilesWaltz). The APK releases can be found [here](https://github.com/jose-villegas/TilesWaltz/releases)
 
+<table class="table">
+<thead>
+<tr>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center"><img src="https://res.cloudinary.com/jose-villegas/image/upload/v1608681898/IMG_20201222_210227_2_hcmmgk.jpg" alt="alt text" width="300"></td>
+</tr>
+</tbody>
+</table>
+
 I was already wanting to have a game idea since I wanted to practice some Unity frameworks, so once I got the core gameplay draft written I started developing the game.
 
 In Tile's Waltz you play in a isometric perspective environment with a level made of tiles that are interconnected with each other, verticality is added through the tiles orientation, a tile can be connected to another in the four cardinal directions, but when connected I can also be oriented as going up, down or just staying plain. As seen here: 
