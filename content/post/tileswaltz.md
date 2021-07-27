@@ -126,4 +126,4 @@ The game currently contains:
 
 ## In Progress
 
-I have taken this as a little hobby project so I still updating it from time to time, there are some future improvements and updates I hope to make in the future.
+I have taken this as a little hobby project, there are some future improvements and updates I hope to make in the future.
