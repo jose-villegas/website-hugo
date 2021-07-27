@@ -11,7 +11,7 @@ image: "https://res.cloudinary.com/jose-villegas/image/upload/v1599493070/WebPag
 Tile's Waltz is a game I started developing alone during quarantine for the COVID-19 crisis. It's a match-3 puzzle game with focus on memorization, you remove pieces from the level, when that piece is removed other pieces move to take their place, using this mechanic you need to combine 3 or more pieces of the same color to get combos or powerful power ups. I hope to continue polishing this game further, still a good practicing experience.
 <!--more-->
 
-The idea for the game came to me while I was watching a wristband my mom bought me long ago, a bit of quarantine boredom basically, this wristband is made of little pieces that look like the tiles in the game. So I started to imagine what kind of game I could make with this shape. The game source code can be found [here on my GitHub](https://github.com/jose-villegas/TilesWaltz). The APK releases can be found [here](https://github.com/jose-villegas/TilesWaltz/releases)
+The idea for the game came to me while I was watching a wristband my mom bought me long ago, a bit of quarantine boredom basically, this wristband is made of little pieces that look like the tiles in the game. So I started to imagine what kind of game I could make with this shape.
 
 <table class="table">
 <thead>
@@ -25,7 +25,7 @@ The idea for the game came to me while I was watching a wristband my mom bought 
 </tbody>
 </table>
 
-I was already wanting to have a game idea since I wanted to practice some Unity frameworks, so once I got the core gameplay draft written I started developing the game.
+I was itching to come up with a game idea since I wanted to practice some Unity frameworks, so once I got the core gameplay draft written I started developing the game.
 
 In Tile's Waltz you play in a isometric perspective environment with a level made of tiles that are interconnected with each other, verticality is added through the tiles orientation, a tile can be connected to another in the four cardinal directions, but when connected I can also be oriented as going up, down or just staying plain. As seen here: 
 
@@ -50,7 +50,11 @@ When you remove a tile from the structure by pressing on it, the structure needs
 </thead>
 <tbody>
 <tr>
-<td align="center"><img src="https://github.com/jose-villegas/TilesWaltz/blob/master/Media/Animated/summary.gif?raw=true" alt="alt text" width="200">
+<td align="center">
+    <video width="100%" autoplay loop>
+    <source src="https://res.cloudinary.com/jose-villegas/video/upload/v1627428464/WebPage/summary.webm" type="video/webm">
+    Your browser does not support the video tag.
+    </video>
 </td>
 </tr>
 </tbody>
@@ -69,7 +73,7 @@ If you combine 4 in a straight line you get a directional power in the orthogona
 </thead>
 <tbody>
 <tr>
-<td align="center"><img src="https://github.com/jose-villegas/TilesWaltz/raw/master/Media/Animated/dir1.gif" alt="alt text" width="200"></td>
+<td align="center"><img src="https://res.cloudinary.com/jose-villegas/image/upload/v1627428035/WebPage/dir1.gif" alt="alt text" width="200"></td>
 </tr>
 </tbody>
 </table>
@@ -85,7 +89,7 @@ If you combine 5 of more tiles you get a color power up, when you click the tile
 </thead>
 <tbody>
 <tr>
-<td align="center"><img src="https://github.com/jose-villegas/TilesWaltz/raw/master/Media/Animated/color1.gif" alt="alt text" width="300"></td>
+<td align="center"><img src="https://res.cloudinary.com/jose-villegas/image/upload/v1627428035/WebPage/color1.gif" alt="alt text" width="300"></td>
 </tr>
 </tbody>
 </table>
@@ -101,34 +105,25 @@ You can make your own levels in this game, it provides a level editor that lets 
 </thead>
 <tbody>
 <tr>
-<td align="center"><img src="https://github.com/jose-villegas/TilesWaltz/raw/master/Media/Animated/build1.gif" alt="alt text" width="300"></td>
+<td align="center"><img src="https://res.cloudinary.com/jose-villegas/image/upload/v1627428035/WebPage/build1.gif" alt="alt text" width="300"></td>
 </tr>
 </tbody>
 </table>
 
-## Current Content
+## Content
 
 {{< youtube _tPDQQVZXuU>}}
 
 The game currently contains:
 
 * 13 playable maps.
-* Two power ups for bigger combos.
-* Level editor
-* Sharing and importing through text or QR
-* Basic tutorial
-* Spanish and English localization
-* GPGPS integration and cloud save (would need to be uploaded to the store to work though)
+* Two Power ups for Bigger Combos.
+* Level Editor
+* Sharing and Importing through Text or QR
+* Basic Tutorial
+* Spanish and English Localization
+* GPGPS integration and Cloud Save
 
 ## In Progress
 
-The game stills in development, there are some things that are in progress:
-
-* FTUE Improvements
-* Add map "pointers" in the game map to the UI, easy return if the user drags too far away in the game map.
-* Localization
-* Ads, maybe
-* Check tablets aspect ratio
-* Map level previewer
-
-
+I have taken this as a little hobby project so I still updating it from time to time, there are some future improvements and updates I hope to make in the future.
