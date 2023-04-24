@@ -8,10 +8,10 @@ tags: ["unity", "games", "csharp"]
 image: "https://res.cloudinary.com/jose-villegas/image/upload/v1599493070/WebPage/mess.png"
 ---
 
-Tile's Waltz is a game I started developing alone during quarantine for the COVID-19 crisis. It's a match-3 puzzle game with focus on memorization, you remove pieces from the level, when that piece is removed other pieces move to take their place, using this mechanic you need to combine 3 or more pieces of the same color to get combos or powerful power ups. I hope to continue polishing this game further, still a good practicing experience.
+Tile's Waltz is a game I started developing alone during quarantine for the COVID-19 crisis. It's a match-3 puzzle game with focus on memorization, you remove pieces from the level, when that piece is removed other pieces move to take their place, you need to combine pieces of the same color to get combos or power ups.
 <!--more-->
 
-The idea for the game came to me while I was watching a wristband my mom bought me long ago, a bit of quarantine boredom basically, this wristband is made of little pieces that look like the tiles in the game. So I started to imagine what kind of game I could make with this shape.
+The idea for the game came to me while I was watching a wristband my mom bought me long ago, a bit of quarantine boredom basically, this wristband is made of little pieces that look like the tiles in the game. So I started to imagine what kind of game I could make with this shape. 
 
 <table class="table">
 <thead>
