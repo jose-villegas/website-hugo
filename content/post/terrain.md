@@ -5,7 +5,7 @@ image: "https://camo.githubusercontent.com/e162381c407599525985d3e817fa46d2501eb
 showonlyimage: true
 draft: false
 weight: 0
-categories: ["graphics"]
+categories: ["Graphics"]
 tags: ["opengl", "c++", "effects"]
 ---
 

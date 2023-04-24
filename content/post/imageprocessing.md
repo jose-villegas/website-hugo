@@ -5,7 +5,7 @@ image: "https://camo.githubusercontent.com/65352d7998291e3eb0214c794bc0614ce3a1d
 showonlyimage: true
 draft: false
 weight: 0
-categories: ["graphics"]
+categories: ["Graphics"]
 tags: ["image processing", "csharp"]
 ---
 

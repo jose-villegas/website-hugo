@@ -5,7 +5,7 @@ image: "https://github.com/jose-villegas/StyleTransferFunction/blob/master/scree
 showonlyimage: true
 draft: false
 weight: 0
-categories: ["graphics"]
+categories: ["Graphics"]
 tags: ["opengl", "c++", "effects"]
 ---
 

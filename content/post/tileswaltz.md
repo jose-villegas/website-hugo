@@ -1,9 +1,9 @@
 ---
-title: "Tile's Waltz - Something I made in quarentine"
+title: "Tile's Waltz - Quarantine Project"
 date: 2020-06-22T18:03:51-04:00
 showonlyimage: true
 draft: false
-categories: ["games"]
+categories: ["Games"]
 tags: ["unity", "games", "csharp"]
 image: "https://res.cloudinary.com/jose-villegas/image/upload/v1599493070/WebPage/mess.png"
 ---

@@ -5,7 +5,7 @@ image: "https://camo.githubusercontent.com/8d6ff1ab131df3a0105dc4840a3f0ef747a7d
 showonlyimage: true
 draft: false
 weight: 0
-categories: ["graphics"]
+categories: ["Graphics"]
 tags: ["opengl", "c++", "global illumination"]
 ---
 

@@ -5,7 +5,7 @@ image: "https://camo.githubusercontent.com/6add2ae0245f8019e790081bd59efa485f0b2
 showonlyimage: true
 draft: false
 weight: 0
-categories: ["graphics"]
+categories: ["Graphics"]
 tags: ["shaders", "csharp", "unity", "effects"]
 ---
 

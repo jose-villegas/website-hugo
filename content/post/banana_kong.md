@@ -3,7 +3,7 @@ title: "Banana Kong"
 date: 2020-01-30T00:00:00+01:00
 showonlyimage: true
 draft: false
-categories: ["games", "work" ]
+categories: ["Games", "Work" ]
 tags: ["unity", "development", "games", "csharp"]
 image: "https://res.cloudinary.com/jose-villegas/image/upload/v1595428279/WebPage/bk_1080p_artwork_strand-1920x0-c-default.jpg"
 ---

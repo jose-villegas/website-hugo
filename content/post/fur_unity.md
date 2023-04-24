@@ -5,7 +5,7 @@ image: "https://res.cloudinary.com/jose-villegas/image/upload/v1595437703/WebPag
 showonlyimage: true
 draft: false
 weight: 0
-categories: ["graphics"]
+categories: ["Graphics"]
 tags: ["shaders", "csharp", "unity", "effects"]
 ---
 
