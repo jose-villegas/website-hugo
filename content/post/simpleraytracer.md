@@ -9,10 +9,11 @@ categories: ["Graphics"]
 tags: ["opengl", "c++", "global illumination"]
 ---
 
-This was an extremely simple raytracer I wrote in college for an assignment. The source code can be found [here on my GitHub](https://github.com/jose-villegas/Simple-Raytracer).
+This was an extremely simple raytracer I wrote in college for an assignment. Here I could learn a lot about the mathematics and physics that makeup light rendering.
+
 <!--more--> 
 
-The raytracer is implemented in C++, it receives primitives through a YAML file, where different primitives and their transforms can be defined.
+The raytracer is implemented in C++, it receives primitives through a YAML file, where different primitives and their transforms can be defined.  The source code can be found [here on my GitHub](https://github.com/jose-villegas/Simple-Raytracer).
 
 <img src="https://camo.githubusercontent.com/8d6ff1ab131df3a0105dc4840a3f0ef747a7d033/687474703a2f2f692e696d6775722e636f6d2f6d43724656397a2e6a7067" width="100%">
 

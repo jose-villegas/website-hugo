@@ -9,10 +9,10 @@ categories: ["Graphics"]
 tags: ["opengl", "c++", "effects"]
 ---
 
-When I first started to study computer graphics in my college, this was one of the first assignments, we implemented different real time rendering techniques for this project which included: object selection, translations, rotations and scaling, camera translation and rotation, refraction and reflection, point lights, directional lights, spot lights and shadow mapping.
+This was one of my first computer graphics assignments, we implemented different real time rendering techniques in this project, which included: object selection, translations, rotations and scaling, camera translation and rotation, refraction and reflection, point lights, directional lights, spot lights and shadow mapping.
 <!--more-->
 
-This this was made with C++, using OpenGL, GLEW, SFML, GLM and AntWeakBar for the UI. The source code can be found on [my GitHub here](https://github.com/jose-villegas/NormalShadowRefr-Mapping).
+This was made with C++, using OpenGL, GLEW, SFML, GLM and AntWeakBar for the UI. The source code can be found on [my GitHub here](https://github.com/jose-villegas/NormalShadowRefr-Mapping).
 
 Reflections, Refractions, Object Loading, Color Picking, Bump Mapping, Shadow Mapping, etc. Using old OpenGL (using client states and predefined vertex buffers)
 

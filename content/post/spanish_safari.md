@@ -8,14 +8,14 @@ tags: ["unity", "development", "games", "csharp"]
 image: "https://res.cloudinary.com/jose-villegas/image/upload/v1595375447/WebPage/spanish-safari-cover.jpg"
 ---
 
-While I was still in college this was my first experience profesionally as a game developer. Living in Caracas at the time I got contacted by a startup called [LearnSafari](https://www.learnsafari.com/), this happened in my last year of college, thanks to the game jams. Spanish Safari is a game or a tool for parents, with the purpose of teaching Spanish to kids in an interactive adventure game.
+While I was still in college this was my first working experience as a game developer. Living in Caracas at the time I got contacted by  [LearnSafari](https://www.learnsafari.com/), thanks game jams! Spanish Safari is a game or a tool for parents, with the purpose of teaching Spanish to kids in an interactive adventure game.
 <!--more-->
 
 # Overview
 
 LearnSafari is a startup from Australia, that has multiple education games on the AppStore, the game I worked on was called Spanish Safari.
 
-As a developer I was in charge of many things, developing mechanics, data structures, implenting different mini-games and small features, fixing bugs, etc. Since we were a small team I also had input on game mechanics design, level design, animations, and many other things, not just programming.
+As a game developer I was in charge of many things, developing mechanics, data structures, implenting different mini-games and small features, fixing bugs, etc. Since we were a small team I also had input on game mechanics design, level design, animations, and many other things, not just programming.
 
 It was a really good experience where I learned a lot about team work in a professional environment, project management, communication, tasks estimations, coding standards, and many more things.
 
