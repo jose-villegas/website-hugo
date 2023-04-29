@@ -22,9 +22,9 @@ The game needed to be fully reactive for most of the info displayed on screen, w
 
 As a lead programmer I had to plan features, design the software architecture for many game systems and mechanics, give support and feedback to my coworkers, work along other areas of development and also implement my own features. I was strongly involved into the game UI, graphics and optimizations, battle system, asset delivery systems, backend integration, continuous integration, and many others.
 
-The game was sadly cancelled along technology budget cuts of 2023, this project got axed in that process. The game was meant for [Google Play](https://play.google.com/store/apps/details?id=com.nway.prheroes&hl=es_CL&gl=US) and [iOS](https://apps.apple.com/us/app/id1593144057?ct=Tap236604) 
+The game was developed for [Google Play](https://play.google.com/store/apps/details?id=com.nway.prheroes&hl=es_CL&gl=US) and [iOS](https://apps.apple.com/us/app/id1593144057?ct=Tap236604) 
 
-Gameplay videos and screenshots can still be found around the web
+Some gameplay videos and screenshots:
 
 {{< youtube o0Z4swkSjqA >}}
 
