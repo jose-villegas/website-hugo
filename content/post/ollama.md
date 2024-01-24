@@ -5,7 +5,7 @@ showonlyimage: true
 draft: false
 categories: ["Games"]
 tags: ["unity", "games", "csharp"]
-image: "https://camo.githubusercontent.com/cc7cc1a128f4b73158278f91f9b56eb0cfda2763/68747470733a2f2f692e696d6775722e636f6d2f4e6745337962662e706e67"
+image: "https://camo.githubusercontent.com/4536a0bb9af6d1e3ae772cbf90a6987341f49db8df62d6eaaef3a7a4bd6f0d6c/68747470733a2f2f692e696d6775722e636f6d2f4e6745337962662e706e67"
 ---
 
 For this instance I was asked to create a game, alone, in a single week as part of a test. I ended up making an isometric platform game, you have to complete levels and collect coins along the way. 

@@ -5,7 +5,9 @@ languageCode = "en-us"
 # Enable comments by entering your Disqus shortname
 disqusShortname = "https-jose-villegas-github-io"
 # Enable Google Analytics by entering your tracking code
-googleAnalytics = "G-MPR6KXB27V"
+
+# Now on head.html partial
+# googleAnalytics = "G-MPR6KXB27V"
 
 [params]
   # Use custom.css for your custom styling
