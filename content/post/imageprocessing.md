@@ -1,7 +1,7 @@
 ---
 date: "2015-02-28T00:00:00+01:00"
 title: "Image Processing"
-image: "https://camo.githubusercontent.com/65352d7998291e3eb0214c794bc0614ce3a1da08/687474703a2f2f692e696d6775722e636f6d2f7975557a6236692e706e67"
+image: "https://camo.githubusercontent.com/82c3e65b0ac3aa584b9ce97b4eb2bdcff8bb43ac6fefa035c10f89e3c1b6f3a7/687474703a2f2f692e696d6775722e636f6d2f6b3875484762612e706e67"
 showonlyimage: true
 draft: false
 weight: 0
@@ -9,10 +9,10 @@ categories: ["Graphics"]
 tags: ["image processing", "csharp"]
 ---
 
-This program implements multiple image processing algorithms, such as edge detection, noise reduction, sharpening etc, part of a college assignment.
+This program implements multiple image processing algorithms, such as edge detection, noise reduction, sharpening, morphological operations, etc, part of a college assignment.
 <!--more-->
 
-Image loader and processor focused on edge detection, using C# and image loading functions provided by Windows System, UI using Windows Forms. The source code for this project can be found [on my GitHub.](https://github.com/jose-villegas/Edge-Detection)
+Image loader and processor focused on edge detection, using C# and image loading functions provided by Windows System, UI using Windows Forms. The source code for this project can be found [on my GitHub.](https://github.com/jose-villegas/Morphological-Operations)
 
 Edge Detection Kernels:
 
