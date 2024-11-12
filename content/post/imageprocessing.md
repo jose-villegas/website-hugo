@@ -1,7 +1,7 @@
 ---
 date: "2015-02-28T00:00:00+01:00"
 title: "Image Processing"
-image: "https://camo.githubusercontent.com/82c3e65b0ac3aa584b9ce97b4eb2bdcff8bb43ac6fefa035c10f89e3c1b6f3a7/687474703a2f2f692e696d6775722e636f6d2f6b3875484762612e706e67"
+image: "https://res.cloudinary.com/jose-villegas/image/upload/v1595448912/WebPage/l66KH4Y.jpg"
 showonlyimage: true
 draft: false
 weight: 0
