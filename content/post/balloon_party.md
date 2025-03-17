@@ -5,7 +5,7 @@ showonlyimage: true
 draft: false
 categories: ["Games"]
 tags: ["unity", "games", "csharp"]
-image: "https://res.cloudinary.com/jose-villegas/image/upload/v1742205374/Screenshot_2025-03-17_105303_irslni.png"
+image: "https://res.cloudinary.com/jose-villegas/image/upload/v1742205951/Screenshot_2025-03-17_110537_k0ufmi.png"
 ---
 
 Balloon Party is another game I started developing alone during quarantine for the COVID-19 crisis. It's a match-3 game, focused on action, you throw a canon ball towards a collection of ballons and try to aim for 3 in a row, on match the cannon ball gains another bounce as "shield", there are also multiple power ups that help along the way.
