@@ -20,7 +20,7 @@ A short gameplay video:
 
 And some screenshots:
 
-<img src="https://res.cloudinary.com/jose-villegas/image/upload/v1742205374/Screenshot_2025-03-17_105333_nhse5x.png" style="width: 100%;"/>
-<img src="https://res.cloudinary.com/jose-villegas/image/upload/v1742205375/Screenshot_2025-03-17_105546_qdrn9o.png" style="width: 100%;"/>
-<img src="https://res.cloudinary.com/jose-villegas/image/upload/v1742205375/Screenshot_2025-03-17_105445_mpwyds.png" style="width: 100%;"/>
-<img src="https://res.cloudinary.com/jose-villegas/image/upload/v1742205374/Screenshot_2025-03-17_105303_irslni.png" style="width: 100%;"/>
+<img src="https://res.cloudinary.com/jose-villegas/image/upload/v1742205374/Screenshot_2025-03-17_105333_nhse5x.png" style="width: 50%;"/>
+<img src="https://res.cloudinary.com/jose-villegas/image/upload/v1742205375/Screenshot_2025-03-17_105546_qdrn9o.png" style="width: 50%;"/>
+<img src="https://res.cloudinary.com/jose-villegas/image/upload/v1742205375/Screenshot_2025-03-17_105445_mpwyds.png" style="width: 50%;"/>
+<img src="https://res.cloudinary.com/jose-villegas/image/upload/v1742205374/Screenshot_2025-03-17_105303_irslni.png" style="width: 50%;"/>
