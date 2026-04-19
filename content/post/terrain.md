@@ -1,7 +1,7 @@
 ---
 date: "2017-06-19T00:00:00+02:00"
 title: "Simple Multi-texture Terrain Rendering"
-image: "https://camo.githubusercontent.com/39975b76ef1b3768dc99725bd77921ec9bc88cb0a8106d074196a40d75614699/687474703a2f2f692e696d6775722e636f6d2f6f4a454e6d38352e6a7067"
+image: "https://res.cloudinary.com/jose-villegas/image/upload/v1731415831/687474703a2f2f692e696d6775722e636f6d2f6f4a454e6d38352e6a7067_l4kszz.jpg"
 showonlyimage: true
 draft: false
 weight: 0
@@ -14,6 +14,6 @@ This is a simple implementation of terrain rendering using heighmaps, part of a 
 
 The source code can be found [here on my GitHub](https://github.com/jose-villegas/TerrainRendering). The project does require a lot of dependencies to compile, it was made using [OGLPlus](https://github.com/matus-chochlik/oglplus), glm, [boost](https://www.boost.org/), [FreeImage](https://freeimage.sourceforge.io/), [ImGui](https://github.com/ocornut/imgui) and Parallel Patterns Library [(ppl)](https://docs.microsoft.com/en-us/cpp/parallel/concrt/parallel-patterns-library-ppl?view=vs-2019).
 
-<img src="https://camo.githubusercontent.com/39975b76ef1b3768dc99725bd77921ec9bc88cb0a8106d074196a40d75614699/687474703a2f2f692e696d6775722e636f6d2f6f4a454e6d38352e6a7067" width="100%">
+<img src="https://res.cloudinary.com/jose-villegas/image/upload/v1731415831/687474703a2f2f692e696d6775722e636f6d2f6f4a454e6d38352e6a7067_l4kszz.jpg" width="100%">
 
 

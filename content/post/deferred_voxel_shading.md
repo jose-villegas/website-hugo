@@ -170,6 +170,7 @@ A disvantage of this technique is the loss of precision averaging all the geomet
 </center>
 
 To reduce this issue our proposal utilizes a normal-weighted attenuation, where first the normal attenuation is calculated per every face of the voxel as follows:
+To reduce this issue our proposal utilizes a normal-weighted attenuation, where first the normal attenuation is calculated per every face of the voxel as follows:
 
 \begin{equation}
 D_\{x,y,z\} = (\hat{i}\cdot\Psi, \hat{j}\cdot\Psi, \hat{k}\cdot\Psi)
@@ -229,6 +230,7 @@ To generate accurate results during the cone tracing step the voxels need to be 
 
 The classic shadow mapping or alike techniques can be used to compute the voxels occlusion. The position of the voxel is projected in light space and the depth of the projected point is compared with the stored depth from the shadow map to determine if the voxel is occluded.
 
+Our proposal also computes occlusion using raycasting within a volume. Any of the resulting volumes from the voxelization process can be used since the algorithm only needs to determine if a voxel exists at a certain position. To determine occlusion of a voxel, a ray is traced from the position of voxel in the direction of the light, the volume is sampled to determine if at the position of the ray there is a voxel, if this condition is true then the voxel is occluded.
 Our proposal also computes occlusion using raycasting within a volume. Any of the resulting volumes from the voxelization process can be used since the algorithm only needs to determine if a voxel exists at a certain position. To determine occlusion of a voxel, a ray is traced from the position of voxel in the direction of the light, the volume is sampled to determine if at the position of the ray there is a voxel, if this condition is true then the voxel is occluded.
 
 #### 2.2.1. Soft Voxel Shadows
@@ -569,6 +571,7 @@ Below a visual comparison between a reference image rendered in a path-tracer fo
 <tr>
 <th>Reference (3~ hours)</th>
 <th><a href="https://www.crytek.com/download/Light_Propagation_Volumes.pdf">Light Propagation Volumes</a> (18.86 ms)</th>
+<th>Our approach (17.34 ms)</th>
 <th>Our approach (17.34 ms)</th>
 </tr>
 </thead>
