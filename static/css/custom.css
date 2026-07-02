@@ -134,15 +134,21 @@
 .row.content {
     display: flex;
     flex-wrap: wrap;
+    margin-bottom: 2.5em;
 }
 
 .image-container {
     overflow: hidden;
     padding: 0%;
-    margin-bottom: 2.5em;
     right: -1px;
     height: calc(100%);
     width: calc(50% + 0px);
+}
+
+@media (min-width: 768px) {
+    .content-excerpt.col-md-6 {
+        width: 50%;
+    }
 }
 
 .featured-image {
