@@ -131,6 +131,11 @@
     line-height: 1.85;
 }
 
+.row.content {
+    display: flex;
+    flex-wrap: wrap;
+}
+
 .image-container {
     overflow: hidden;
     padding: 0%;
