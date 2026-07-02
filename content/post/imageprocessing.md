@@ -38,7 +38,7 @@ Other Options:
 
 * Free Rotation
 * Horizontal / Vertical Mirror
-* Brigthness and Contrast
+* Brightness and Contrast
 * Negative
 * Threshold
 * RGB Histograms

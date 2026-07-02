@@ -11,7 +11,7 @@ image: "https://res.cloudinary.com/jose-villegas/image/upload/v1682361257/maxres
 After working in Globant for a couple of small projects I finally got to lead a new game from beginning to launch. Power Rangers: Morphin Legends is an action role-playing game, with a complex turn based battle system, beautiful comic-like graphics, and many features that involve user progression. The game was published by NWay Inc.
 <!--more-->
 
-I was requested to join as Lead Frontend Developer after this game was in protyping phase for at least two months. My main role was to design and lead the main system that would feature the core gameplay mechanics of the game. Specially the battle system, as this one involved complex interactions that would happen during battle, making an otherwise standard turn based game into a more complex and engaging experience.
+I was requested to join as Lead Frontend Developer after this game was in prototyping phase for at least two months. My main role was to design and lead the main system that would feature the core gameplay mechanics of the game. Specially the battle system, as this one involved complex interactions that would happen during battle, making an otherwise standard turn based game into a more complex and engaging experience.
 
 Official Trailer:
 

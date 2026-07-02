@@ -81,7 +81,7 @@ If you combine 4 in a straight line you get a directional power in the orthogona
 
 * Combine 5 or more tiles:
 
-If you combine 5 of more tiles you get a color power up, when you click the tile with this power up it will the remove all the tiles that have this same color, it's important to look at the map to make the best use of it.
+If you combine 5 of more tiles you get a color power up, when you click the tile with this power up it will remove all the tiles that have this same color, it's important to look at the map to make the best use of it.
 
 <table class="table">
 <thead>
@@ -123,7 +123,7 @@ The game currently contains:
 * Sharing and Importing through Text or QR
 * Basic Tutorial
 * Spanish and English Localization
-* GPGPS integration and Cloud Save
+* Google Play Games Services integration and Cloud Save
 
 ## In Progress
 

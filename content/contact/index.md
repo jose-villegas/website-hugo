@@ -4,7 +4,7 @@ title: "Get in touch"
 draft: false
 image: "https://res.cloudinary.com/jose-villegas/image/upload/v1595302391/WebPage/5597872486_43af8e948b_o.jpg"
 ---
-You reach me out using the following:
+You can reach me using the following:
 
 <div>
     <a href="mailto:villegasjose.gg@gmail.com" data-animate-hover="pulse" class="email">

@@ -9,7 +9,7 @@ categories: ["Graphics"]
 tags: ["opengl", "c++", "effects"]
 ---
 
-This is a simple implementation of terrain rendering using heighmaps, part of a college assignment. The code has some optimizations such as parallel processing to bake lightmaps and cheap ambient occlusion using the terrain heighmap.
+This is a simple implementation of terrain rendering using heightmaps, part of a college assignment. The code has some optimizations such as parallel processing to bake lightmaps and cheap ambient occlusion using the terrain heightmap.
 <!--more-->
 
 The source code can be found [here on my GitHub](https://github.com/jose-villegas/TerrainRendering). The project does require a lot of dependencies to compile, it was made using [OGLPlus](https://github.com/matus-chochlik/oglplus), glm, [boost](https://www.boost.org/), [FreeImage](https://freeimage.sourceforge.io/), [ImGui](https://github.com/ocornut/imgui) and Parallel Patterns Library [(ppl)](https://docs.microsoft.com/en-us/cpp/parallel/concrt/parallel-patterns-library-ppl?view=vs-2019).

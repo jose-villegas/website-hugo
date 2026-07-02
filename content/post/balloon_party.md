@@ -8,7 +8,7 @@ tags: ["unity", "games", "csharp"]
 image: "https://res.cloudinary.com/jose-villegas/image/upload/v1742205951/Screenshot_2025-03-17_110537_k0ufmi.png"
 ---
 
-Balloon Party is another game I started developing alone during quarantine for the COVID-19 crisis. In this game you throw a cannonball towards a collection of ballons and try to aim for 3 in a row, on success the cannonball gains another bounce as "shield", there are also multiple power ups that help along the way. This project was done with the intention of learning the ECS paradigm and Entitas.
+Balloon Party is another game I started developing alone during quarantine for the COVID-19 crisis. In this game you throw a cannonball towards a collection of balloons and try to aim for 3 in a row, on success the cannonball gains another bounce as "shield", there are also multiple power ups that help along the way. This project was done with the intention of learning the ECS paradigm and Entitas.
 
 <!--more-->
 
