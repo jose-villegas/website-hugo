@@ -5,7 +5,7 @@ showonlyimage: true
 draft: false
 categories: ["Games", "Work" ]
 tags: ["unity", "development", "games", "csharp"]
-image: "https://res.cloudinary.com/jose-villegas/image/upload/v1742566540/F_uRPAzacAMrUPg_jcsvju.jpg"
+image: "https://res.cloudinary.com/jose-villegas/image/upload/v1783017941/4dc9642b-6839-4ab2-908e-605650365344.png"
 ---
 
 After my experience with Power Rangers: Morphin Legends, I joined the team developing Reign of Titans, a card battling game for ABinBev with live multiplayer battles between titans and card decks. This project involved technical challenges from rendering to matchmaking and live synchronization.
