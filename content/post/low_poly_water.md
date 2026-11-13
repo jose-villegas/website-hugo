@@ -1,7 +1,7 @@
 ---
 date: "2017-04-18T00:00:00+02:00"
 title: "Low Poly Water in Unity"
-image: "https://res.cloudinary.com/jose-villegas/image/upload/v1731416127/68747470733a2f2f692e696d6775722e636f6d2f70316a736e624d2e6a7067_zlhnbr.jpg"
+image: "/img/low-poly-water/hero.jpg"
 showonlyimage: true
 draft: false
 weight: 0
@@ -14,9 +14,6 @@ I wanted to do a small test with shaders in Unity to simulate water using sum of
 
 The source code for this small effect can be found on my GitHub [here](https://github.com/jose-villegas/LowPolyWater).
 
-<img src="https://res.cloudinary.com/jose-villegas/image/upload/v1595437470/WebPage/U7PyrRZ.gif" width="100%">
+<img src="/img/low-poly-water/hero.gif" width="100%">
 
-<img src="https://res.cloudinary.com/jose-villegas/image/upload/v1731416127/68747470733a2f2f692e696d6775722e636f6d2f70316a736e624d2e6a7067_zlhnbr.jpg" width="100%">
-
-<img src="https://res.cloudinary.com/jose-villegas/image/upload/v1731416132/68747470733a2f2f692e696d6775722e636f6d2f784e62766935652e706e67_jlojif.png" width="100%">
-
+<img src="/img/low-poly-water/hero.jpg" width="100%">
