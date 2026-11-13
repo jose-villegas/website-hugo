@@ -1,0 +1,44 @@
+# Builds the site and publishes it to jose-villegas.github.io on every push to master.
+name: Deploy
+
+on:
+  push:
+    branches: [master]
+  workflow_dispatch:
+
+concurrency:
+  group: deploy
+  cancel-in-progress: false
+
+env:
+  HUGO_VERSION: 0.56.3   # the version the live site was built with
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      # Only the theme in use; `public` is the output repo and is published below.
+      - name: Fetch theme
+        run: git submodule update --init --depth 1 themes/hugo-tracks-theme
+
+      - name: Install Hugo ${{ env.HUGO_VERSION }}
+        run: |
+          curl -sSL -o hugo.tar.gz "https://github.com/gohugoio/hugo/releases/download/v${HUGO_VERSION}/hugo_${HUGO_VERSION}_Linux-64bit.tar.gz"
+          tar -xzf hugo.tar.gz hugo
+          sudo mv hugo /usr/local/bin/hugo
+          rm hugo.tar.gz
+          hugo version
+
+      - name: Build
+        run: hugo
+
+      - name: Publish to jose-villegas.github.io
+        uses: peaceiris/actions-gh-pages@v4
+        with:
+          deploy_key: ${{ secrets.PAGES_DEPLOY_KEY }}
+          external_repository: jose-villegas/jose-villegas.github.io
+          publish_branch: master
+          publish_dir: ./public
+          full_commit_message: Rebuild site from ${{ github.sha }}
