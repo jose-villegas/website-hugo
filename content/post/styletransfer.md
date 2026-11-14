@@ -1,7 +1,7 @@
 ---
 date: "2017-05-14T00:00:00+02:00"
 title: "Volume Rendering with Style Transfer Function"
-image: "/img/styletransfer/banner.jpg"
+image: "/img/styletransfer/bonsai-banner.jpg"
 showonlyimage: true
 draft: false
 weight: 0
