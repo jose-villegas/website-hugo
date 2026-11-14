@@ -1,7 +1,7 @@
 ---
 date: "2014-12-03T00:00:00+01:00"
 title: "Computer Graphics Basic Mapping Techniques"
-image: "https://res.cloudinary.com/jose-villegas/image/upload/v1595459438/WebPage/cg.png"
+image: "/img/firstcg/banner.jpg"
 showonlyimage: true
 draft: false
 weight: 0
@@ -9,28 +9,25 @@ categories: ["Graphics"]
 tags: ["opengl", "c++", "effects"]
 ---
 
-This was one of my first computer graphics assignments, we implemented different real time rendering techniques in this project, which included: object selection, translations, rotations and scaling, camera translation and rotation, refraction and reflection, point lights, directional lights, spot lights and shadow mapping.
+One of my first computer graphics assignments: a real time scene with shadow mapping, reflections and refractions from cube maps, normal and parallax occlusion mapping, and physically based shading, with object selection and transforms through the UI.
 <!--more-->
 
-This was made with C++, using OpenGL, GLEW, SFML, GLM and AntWeakBar for the UI. The source code can be found on [my GitHub here](https://github.com/jose-villegas/NormalShadowRefr-Mapping).
+The source code is [on my GitHub](https://github.com/jose-villegas/NormalShadowRefr-Mapping), and builds with Visual Studio 2026 with its dependencies included. It is made with C++, old OpenGL (client states and the fixed function matrices) with GLSL shaders, GLEW, GLFW, GLM and AntTweakBar for the UI. The scene is loaded from obj files, and mtl files give each object its textures, normal map, height map and material.
 
-Reflections, Refractions, Object Loading, Color Picking, Bump Mapping, Shadow Mapping, etc. Using old OpenGL (using client states and predefined vertex buffers)
+<img src="/img/firstcg/hero.gif" width="100%">
 
-The focus of this project is to explore the implementation of different mapping techniques such as shadow mapping, environment / projection mapping for real time reflections and refractions, and normal maps for bumped surfaces
+<img src="/img/firstcg/hero.jpg" width="100%">
 
-The program loads the scene through obj files, mtl files are used to specify textures and normal maps.
+The objects turn and bob, and two coloured spot lights orbit them, each casting its own soft shadow (3x3 PCF).
 
-Features:
+The floor uses parallax occlusion mapping. It marches the view ray through a height map in tangent space, so the paving stones occlude each other and keep their depth at grazing angles, where normal mapping alone looks flat.
 
-* Object Selection (using color picking)
-* Object Translation / Rotation
-* Camera Translation / Rotation
-* Refractive / Reflective Objects
-* Point / Spot / Direction lights
-* Shadow Mapping for Spotlights and Directional Lights
+<img src="/img/firstcg/parallax.jpg" width="100%">
 
-Some screenshots:
+Shading is Cook-Torrance with a GGX distribution, Smith-Schlick geometry and Schlick Fresnel, in the metallic and roughness workflow, read from the mtl PBR keys (`Pm`, `Pr`, `map_Pr`). The output is tone mapped and gamma corrected. Reflections and refractions sample a mipmapped cube map, rougher surfaces reading blurrier levels, with a procedural sky around the scene. Blinn-Phong shading is a toggle in the UI.
 
-<img src="https://camo.githubusercontent.com/d025d7f472501df38ddfbc0a180846b1b45c5f85/687474703a2f2f692e696d6775722e636f6d2f6a464b6b6f4a782e706e67" width="100%">
+<img src="/img/firstcg/shading.jpg" width="100%">
 
-<img src="https://camo.githubusercontent.com/190c1b1fbafd89c83997853fb3c0f5ff0743d793/687474703a2f2f692e696d6775722e636f6d2f66577a6e6f33372e706e67" width="100%">
+The UI selects an object to move, rotate, scale or change its material, and toggles every effect:
+
+<img src="/img/firstcg/ui.jpg" width="100%">
