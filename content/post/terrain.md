@@ -1,7 +1,7 @@
 ---
 date: "2017-06-19T00:00:00+02:00"
 title: "Simple Multi-texture Terrain Rendering"
-image: "https://res.cloudinary.com/jose-villegas/image/upload/v1731415831/687474703a2f2f692e696d6775722e636f6d2f6f4a454e6d38352e6a7067_l4kszz.jpg"
+image: "/img/terrain-rendering/hero.jpg"
 showonlyimage: true
 draft: false
 weight: 0
@@ -9,11 +9,13 @@ categories: ["Graphics"]
 tags: ["opengl", "c++", "effects"]
 ---
 
-This is a simple implementation of terrain rendering using heightmaps, part of a college assignment. The code has some optimizations such as parallel processing to bake lightmaps and cheap ambient occlusion using the terrain heightmap.
+Terrain rendering from heightmaps generated with libnoise, started as a college assignment. It is textured by height, lit through the day by path-traced lightmaps, and drawn with geomipmapping.
 <!--more-->
 
-The source code can be found [here on my GitHub](https://github.com/jose-villegas/TerrainRendering). The project does require a lot of dependencies to compile, it was made using [OGLPlus](https://github.com/matus-chochlik/oglplus), glm, [boost](https://www.boost.org/), [FreeImage](https://freeimage.sourceforge.io/), [ImGui](https://github.com/ocornut/imgui) and Parallel Patterns Library [(ppl)](https://docs.microsoft.com/en-us/cpp/parallel/concrt/parallel-patterns-library-ppl?view=vs-2019).
+The source code is [on my GitHub](https://github.com/jose-villegas/TerrainRendering), and builds with Visual Studio 2026 with its dependencies included. The time of the day lighting is baked on the CPU with a path tracer: soft sun shadows, sky light and two diffuse bounces. Optional light shafts march through a height fog over the terrain. Geomipmapping draws each chunk of the terrain at the coarsest level its pixel error allows, stitched to its neighbours so the mesh stays watertight; [this page explains how](https://github.com/jose-villegas/TerrainRendering/blob/master/docs/geomipmapping.md).
 
-<img src="https://res.cloudinary.com/jose-villegas/image/upload/v1731415831/687474703a2f2f692e696d6775722e636f6d2f6f4a454e6d38352e6a7067_l4kszz.jpg" width="100%">
+<img src="/img/terrain-rendering/hero.gif" width="100%">
 
+<img src="/img/terrain-rendering/hero.jpg" width="100%">
 
+<img src="/img/terrain-rendering/light-shafts.jpg" width="100%">
