@@ -12,11 +12,15 @@ tags: ["opengl", "c++", "effects"]
 An interactive volume renderer where style transfer functions decide how each part of a scan looks. Every density range gets a lit sphere image, a "style", along with its color and opacity, so bone, skin or leaves each get their own material. The volume lights itself with soft shadows, ambient occlusion and one bounce of indirect light. The technique is based on this [paper](https://www.cg.tuwien.ac.at/research/publications/2007/bruckner-2007-STF/).
 <!--more-->
 
-The source code is [on my GitHub](https://github.com/jose-villegas/StyleTransferFunction), and builds with Visual Studio 2026 with Cinder as a submodule. It is made with C++, OpenGL 4.3 compute and fragment shaders, Cinder, GLM and Dear ImGui. Three volumes come with it: a bonsai, a foot and a skull.
+The source code is [on my GitHub](https://github.com/jose-villegas/StyleTransferFunction), and builds with Visual Studio 2026 with Cinder as a submodule. It is made with C++, OpenGL 4.3 compute and fragment shaders, Cinder, GLM and Dear ImGui. Five volumes come with it: a bonsai, a skull, a foot, an aneurysm and an engine block.
 
 <img src="/img/styletransfer/lighting.gif" width="100%">
 
 <img src="/img/styletransfer/bonsai.jpg" width="100%">
+
+<img src="/img/styletransfer/aneurism.jpg" width="100%">
+
+<img src="/img/styletransfer/engine.jpg" width="100%">
 
 Rays are cast through the volume from the front to the back faces of its bounding box, with jittered start positions to hide banding. Each sample is classified by the transfer function and shaded by looking up its normal in the style's lit sphere. Gradients are central differences, smoothed in compute shaders. They keep their magnitude, so shading can tell a surface from the inside of a homogeneous region.
 
