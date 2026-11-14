@@ -9,7 +9,7 @@ categories: ["Graphics"]
 tags: ["opengl", "c++", "effects"]
 ---
 
-An interactive volume renderer with style transfer functions, part of a college assignment. Every density range gets a lit sphere image, a "style", along with its color and opacity, so bone, skin or leaves each get their own material. The volume lights itself with soft shadows, ambient occlusion and one bounce of indirect light. The technique is based on this [paper](https://www.cg.tuwien.ac.at/research/publications/2007/bruckner-2007-STF/).
+An interactive volume renderer where style transfer functions decide how each part of a scan looks. Every density range gets a lit sphere image, a "style", along with its color and opacity, so bone, skin or leaves each get their own material. The volume lights itself with soft shadows, ambient occlusion and one bounce of indirect light. The technique is based on this [paper](https://www.cg.tuwien.ac.at/research/publications/2007/bruckner-2007-STF/).
 <!--more-->
 
 The source code is [on my GitHub](https://github.com/jose-villegas/StyleTransferFunction), and builds with Visual Studio 2026 with Cinder as a submodule. It is made with C++, OpenGL 4.3 compute and fragment shaders, Cinder, GLM and Dear ImGui. Three volumes come with it: a bonsai, a foot and a skull.
