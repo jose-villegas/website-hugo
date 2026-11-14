@@ -1,7 +1,7 @@
 ---
 date: "2017-06-19T00:00:00+02:00"
 title: "Simple Multi-texture Terrain Rendering"
-image: "/img/terrain-rendering/hero.jpg"
+image: "/img/terrain-rendering/banner.jpg"
 showonlyimage: true
 draft: false
 weight: 0
